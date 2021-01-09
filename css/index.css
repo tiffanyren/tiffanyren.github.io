@@ -1,0 +1,242 @@
+/* 
+NAVIGATION -------------------
+*/
+
+.container_nav {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3.5em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.5s ease;
+}
+
+.container_nav:hover, .container_nav:active, .container_nav:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container_nav .scrolled {
+    background-color: black;
+    transition: none;
+}
+
+/* 
+MAIN INDEX -------------------
+*/
+
+.container_index {
+    position: relative;
+    top: -6.1em;
+    height: auto;
+    max-width: 100%;
+}
+
+.bg_img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* 
+IMG & BUTTON -------------------
+*/
+
+.container_home {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+}
+
+.container_home .container_buttons {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.button_nav {
+    font-family: garamond-premier-pro, serif;
+    display: inline-block;
+    padding: 2rem;
+    margin: 0.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.button_trans {
+    color: white;
+    background-color: transparent;
+    border: 0.1em solid white;
+}
+
+.button_trans:active, .button_trans:hover, .button_trans:focus {
+    color: white;
+    background-color: black;
+    border: 0.1em solid black;
+    text-decoration: none;
+}
+
+.button_nav2 {
+    font-family: garamond-premier-pro, serif;
+    display: inline-block;
+    padding: 1.4rem;
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.button_trans2 {
+    color: black;
+    background-color: transparent;
+    border: 0.08em solid black;
+}
+
+.button_trans2:active, .button_trans2:hover, .button_trans2:focus {
+    color: white;
+    background-color: black;
+    border: 0.08em solid black;
+    text-decoration: none;
+}
+
+
+
+
+/* 
+BIOGRAPHY -------------------
+*/
+
+.container_index .container_bio {
+    background-color: black;
+    height: auto;
+    max-width: 100%;
+    padding: 3rem;
+    color: white;
+    margin: 0;
+}
+
+.container_bio li {
+    padding: 0.5rem 3rem;
+}
+
+/* 
+PROJECTS -------------------
+*/
+
+.proj_title {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.proj_title h1 {
+    display: none;
+}
+
+.proj_title2 {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.proj_title2 h1 {
+    display: none;
+}
+
+.container_proj {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.container_proj .block {
+    justify-content: space-around;
+    padding: 1em;
+    flex-basis: 25%;
+}
+
+.block:active, .block:hover, .block:focus {
+    opacity: 0.7;
+}
+
+.container_proj .block2 {
+    justify-content: space-around;
+    padding: 1em;
+    flex-basis: 25%;
+}
+
+
+
+/* 
+RESPONSIVENESS -------------------
+*/
+
+@media (min-width: 60em) {
+    .container_home .container_buttons {
+        top: 60%;
+        left: 50%;
+    }
+    .container_proj .block {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+    .container_home .container_buttons {
+        top: 65%;
+        left: 50%;
+    }
+    .button_nav {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    .container_proj .block {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+    .container_home .container_buttons {
+        top: 70%;
+        left: 50%;
+    }
+    .button_nav {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+    .container_proj .block {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 30em) {
+    .container_home .container_buttons {
+        top: 80%;
+        left: 50%;
+    }
+    .button_nav {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .container_proj .block {
+        flex-basis: 100%;
+    }
+}

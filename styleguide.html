@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Style Guide - Tiffany Ren</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/styleguide.css">
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>P03</h1>
+
+    <p>Style Guide - Tiffany Ren</p>
+
+    <section class="container_nav">
+      <nav>
+        <a href="index.html">Return to Portfolio</a>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+      </nav>
+    </section>
+
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <h4>CSS Selector:</h4>
+      <p>.in-text_link</p>
+
+      <h4>Sample code:</h4>
+      <pre><code> 
+        &lt;p&gt;Check out our &lt;a class="in-text_link" href="#text_elements"&gt;latest deals&lt;/a&gt; for the holiday! &lt;/p&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <p>Check out our <a class="in-text_link" href="#text_elements">latest deals</a> for the holiday! </p>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button_nav</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;a href="#" class="button_nav button_trans"&gt;Transparent Button&lt;/a&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <a class="button_nav button_trans" href="">Transparent Button</a>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button_confirmation</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;button class="button_trans" type="reset"&gt; Clear &lt;/button&gt; 
+          &lt;button class="button_trans" type="submit"&gt; Submit &lt;/button&gt; 
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <button class="button_trans" type="reset"> Clear </button>
+      <button class="button_trans" type="submit"> Submit </button>
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector: </h4>
+      <p>form</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;form &gt;
+            &lt;label for="text"&gt;Text:&lt;/label&gt;&lt;input id="text" name="text"&gt;
+          &lt;/form&gt;
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <form>
+        <label for="text">Text:</label><input id="text" name="text">
+      </form>
+    </section>
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector: </h4>
+      <p>.container_proj .block</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;div class="container_proj"&gt;
+            &lt;div class="block"&gt;
+             &lt;a href="layout.html"&gt;&lt;img src="img/IAT102-P4-3.png" alt="layout1"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <div class="container_proj">
+        <div class="block">
+          <a href="layout.html"><img src="img/IAT102-P4-3.png" alt="layout1"></a>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector: </h4>
+      <p>h1, h2, h3, h4</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        &lt;h2&gt;Heading 2&lt;/h2&gt;
+        &lt;h3&gt;Heading 3&lt;/h3&gt;
+        &lt;h4&gt;Heading 4&lt;/h4&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <h4>CSS selector:</h4>
+      <p>p</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum 
+        metus vel est pharetra, quis suscipit neque placerat. Curabitur sit amet justo at tellus 
+        volutpat posuere quis at arcu. &lt;/p&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum metus vel est pharetra, quis
+        suscipit neque placerat. Curabitur sit amet justo at tellus volutpat posuere quis at arcu. </p>
+    </section>
+  </section>
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector: </h4>
+      <p>nav a</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;section class="container_nav"&gt;
+          &lt;div class="nav_left"&gt;
+            &lt;a href="index.html"&gt;&lt;img class="img_logo" src="img/thin-white-logo.png" alt="tiffany ren logo"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class="nav_right"&gt;
+            &lt;nav&gt;
+              &lt;a href="index.html#bio"&gt;Biography&lt;/a&gt;
+              &lt;a href="index.html#projects"&gt;Projects&lt;/a&gt;
+              &lt;a href="contact.html"&gt;Contact&lt;/a&gt;                
+            &lt;/nav&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
+      </code></pre>
+    </section>
+
+    <h4>Rendered element:</h4>
+    <section class="container_nav">
+      <div class="nav_left">
+        <a href="index.html"><img class="img_logo" src="img/thin-white-logo.png" alt="tiffany ren logo"></a>
+      </div>
+      <div class="nav_right">
+        <nav>
+          <a href="index.html#bio">Biography</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="element">
+    <h3>Contact Form</h3>
+
+    <h4>CSS selector:</h4>
+    <p>.payment_form</p>
+
+    <h4>Sample code:</h4>
+    <pre><code>
+    &lt;section class="container_form"&gt;  
+      &lt;form id="contact_form" method="post" action="http://www.sfu.ca/cgi-bin/mailto.pl"&gt;
+        &lt;label for="email"&gt;E-mail Address:&lt;/label&gt;&lt;input id="email" name="email"&gt;
+        &lt;label for="name"&gt;Full Name:&lt;/label&gt;&lt;input id="name" name="name"&gt;
+        &lt;label for="body"&gt;Message:&lt;/label&gt;
+        &lt;textarea id="body" name="body"&gt;&lt;/textarea&gt;
+        &lt;p&gt;
+          &lt;input type="hidden" name="recipient" value="tiffanyr@sfu.ca"&gt;
+          &lt;input type="hidden" name="subject" value="Portfolio Contact"&gt;
+          &lt;input type="hidden" name="redirect_url" value="&lt;a href=contact.html&gt; the Contact Form&lt;/a&gt;"&gt;
+          &lt;button class="button_trans" type="reset" value="Clear Form"&gt;Clear Form&lt;/button&gt;
+          &lt;button class="button_trans" type="submit" value="Send Form"&gt;Send Form&lt;/button&gt;
+        &lt;/p&gt;
+      &lt;/form&gt;
+    &lt;/section&gt;
+      </code></pre>
+
+    <h4>Rendered element:</h4>
+    <section class="container_form">
+      <form id="contact_form" method="post" action="http://www.sfu.ca/cgi-bin/mailto.pl">
+        <label for="email">E-mail Address:</label><input id="email" name="email">
+        <label for="name">Full Name:</label><input id="name" name="name">
+        <label for="body">Message:</label>
+        <textarea id="body" name="body"></textarea>
+        <p>
+          <input type="hidden" name="recipient" value="tiffanyr@sfu.ca">
+          <input type="hidden" name="subject" value="Portfolio Contact">
+          <input type="hidden" name="redirect_url" value="<a href=contact.html&gt; the Contact Form</a&gt;">
+          <button class="button_trans" type="reset" value="Clear Form">Clear Form</button>
+          <button class="button_trans" type="submit" value="Send Form">Send Form</button>
+        </p>
+      </form>
+    </section>
+
+  </section>
+
+
+
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  <!-- company branding -->
+  <section id="company_branding">
+    <h2>Branding Ideas</h2>
+
+    <section class="element">
+      <h3>Fonts</h3>
+      <p>I will be using Garamond Premier Pro for headings and options and Sans Serif for paragraph text. Garamond
+        adds an "old story book" stylistic elements in the text, which may make it harder to read, whereas sans serif
+        is very simple and
+        well-spaced. Example below:</p>
+      <h1>The quick brown fox jumps over the lazy dog.</h1>
+      <p>The quick brown fox jumps over the lazy dog.</p>
+    </section>
+
+    <section class="element">
+      <h2>Colour Palette</h2>
+      <div class="colour_palette">
+        <div class="colour" id="black">
+          <p>#000000</p>
+        </div>
+        <div class="colour" id="white">
+          <p>#ffffff</p>
+        </div>
+        <div class="colour" id="lightgrey">
+          <p>#CCCCCC</p>
+        </div>
+      </div>
+      <p>Most aspects of the site will be done with black and white in terms of text and elements, in order
+        to allow the site to have a storybook/novel-like theme. Light grey is used for
+        small accents and focused buttons. The site is meant to look very dark to give more emotional value to the
+        design.
+        The site should look modern with its elements and art, but also look like an old storybook.</p>
+    </section>
+    <section class="element">
+      <h3>Art Direction</h3>
+      <figure>
+        <img src="img/dino-reichmuth-98982.jpg" alt="collection set">
+      </figure>
+    </section>
+  </section>
+
+
+
+
+</body>
+
+</html>
