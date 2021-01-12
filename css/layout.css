@@ -15,11 +15,11 @@
 }
 
 .container_layout .container_style1 {
-    background-color: black;
+    background-color: white;
     height: auto;
     max-width: 100%;
     padding: 3rem;
-    color: white;
+    color: black;
 }
 
 .container_layout .container_style2 {

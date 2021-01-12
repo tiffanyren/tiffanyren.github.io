@@ -1,0 +1,114 @@
+.container_listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.container_listing .container_imgs {
+    flex-direction: column;
+    padding: 3em;
+    padding-left: 8em;
+}
+
+.container_imgs img {
+    margin-bottom: 1em;
+}
+
+.container_listing .container_desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_desc .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 6.25em;
+    background-color: white;
+    padding: 0em 2em;
+    padding-right: 8em;
+    flex-direction: column;
+}
+
+/* 
+BUTTON -------------------
+*/
+
+.button_trans {
+    color: white;
+    background-color: transparent;
+    border: 0.1em solid white;
+}
+
+.button_trans:active, .button_trans:hover, .button_trans:focus {
+    color: white;
+    background-color: black;
+    border: 0.1em solid black;
+    text-decoration: none;
+}
+
+.button_nav2 {
+    font-family: garamond-premier-pro, serif;
+    display: inline-block;
+    padding: 1.4rem;
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.button_trans2 {
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.button_trans2:active, .button_trans2:hover, .button_trans2:focus {
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+}
+
+/* 
+RESPONSIVENESS -------------------
+*/
+
+@media (min-width: 65em) {
+    .container_listing .container_imgs {
+        flex-basis: 60%;
+    }
+    .container_listing .container_desc {
+        flex-basis: 40%;
+    }
+    .container_review {
+        margin: 2em 8em;
+    }
+}
+
+@media (min-width: 45em) and (max-width: 65em) {
+    .container_listing .container_imgs {
+        flex-basis: 60%;
+        padding-left: 3em;
+    }
+    .container_listing .container_desc {
+        flex-basis: 40%;
+    }
+    .container_desc .sticky {
+        padding: 0em 2em;
+    }
+}
+
+@media (max-width: 45em) {
+    .container_listing .container_imgs {
+        flex-basis: 100%;
+        padding-left: 3em;
+    }
+    .container_listing .container_desc {
+        flex-basis: 100%;
+    }
+    .container_desc .sticky {
+        padding: 0em 2em;
+    }
+}
