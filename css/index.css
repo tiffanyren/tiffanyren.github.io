@@ -40,10 +40,10 @@ MAIN INDEX -------------------
 IMG & BUTTON -------------------
 */
 
-.container_home {
+/* .container_home {
     height: 100%;
     max-width: 100%;
-}
+} */
 
 .container_home .container_buttons {
     position: absolute;
@@ -207,8 +207,6 @@ PROJECTS -------------------
     padding: 1em;
     flex-basis: 25%;
 }
-
-
 
 /* 
 RESPONSIVENESS -------------------
