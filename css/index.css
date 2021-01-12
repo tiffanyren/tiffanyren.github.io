@@ -1,3 +1,20 @@
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('../img/dino-reichmuth-98982.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 /* 
 NAVIGATION -------------------
 */
@@ -32,14 +49,7 @@ MAIN INDEX -------------------
 */
 
 .container_index {
-    position: relative;
-    top: -6.1em;
-    height: auto;
-    max-width: 100%;
-}
-
-.bg_img {
-    height: auto;
+    height: 100%;
     max-width: 100%;
 }
 
@@ -48,8 +58,7 @@ IMG & BUTTON -------------------
 */
 
 .container_home {
-    position: relative;
-    height: auto;
+    height: 100%;
     max-width: 100%;
 }
 
@@ -107,20 +116,48 @@ IMG & BUTTON -------------------
     text-decoration: none;
 }
 
-
-
-
 /* 
 BIOGRAPHY -------------------
 */
 
 .container_index .container_bio {
-    background-color: black;
+    background-color:white;
     height: auto;
     max-width: 100%;
     padding: 3rem;
-    color: white;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container_bio .block {
+    display: block;
+    margin: auto;
+    padding: 8em;
+    flex-basis: 40%;
+}
+
+.container_bio .block p {
+    font-size: 2rem;
+}
+
+.container_bio .block h1{
+    font-size: 4em;
+}
+
+.container_bio .block2 {
+    display: block;
+    padding: 5em 10em;
+    flex-basis: 60%;
+}
+
+.container_bio .block2 h3 {
+    color: lightslategray;
+}
+
+.container_bio .block2 p {
+    font-size: 1.7rem;
 }
 
 .container_bio li {
@@ -166,13 +203,20 @@ PROJECTS -------------------
     text-align: center;
 }
 
+.container_proj2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
 .container_proj .block {
     justify-content: space-around;
     padding: 1em;
     flex-basis: 25%;
 }
 
-.block:active, .block:hover, .block:focus {
+.container_proj .block:active, .container_proj .block:hover, .container_proj .block:focus {
     opacity: 0.7;
 }
 
@@ -194,7 +238,7 @@ RESPONSIVENESS -------------------
         top: 60%;
         left: 50%;
     }
-    .container_proj .block {
+    .container_proj2{
         flex-basis: 25%;
     }
 }
@@ -208,7 +252,7 @@ RESPONSIVENESS -------------------
         font-size: 2rem;
         padding: 1.5rem;
     }
-    .container_proj .block {
+    .container_proj2{
         flex-basis: 25%;
     }
 }
@@ -222,7 +266,7 @@ RESPONSIVENESS -------------------
         font-size: 1.6rem;
         padding: 1rem;
     }
-    .container_proj .block {
+    .container_proj2{
         flex-basis: 50%;
     }
 }
@@ -236,7 +280,7 @@ RESPONSIVENESS -------------------
         font-size: 1.2rem;
         padding: 1rem;
     }
-    .container_proj .block {
+    .container_proj2 {
         flex-basis: 100%;
     }
 }

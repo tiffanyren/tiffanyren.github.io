@@ -2,7 +2,7 @@
 
 $(document).ready(function(){       
     var scroll_start = 0;
-    var startchange = $('#bio');
+    var startchange = $('#tagline');
     var offset = startchange.offset();
     $(document).scroll(function() { 
        scroll_start = $(this).scrollTop();
@@ -38,14 +38,14 @@ $( document ).ready(function() {
   typeEffect($('.container_bio h1'), speed);
  
   setTimeout(function(){
-    $('.proj_title h1').css('display', 'inline-block');
+    $('.proj_title h1').css('display', 'block');
     typeEffect($('.proj_title h1'), speed);
   }, delay);
 
   delay += $('.proj_title h1').text().length * speed + speed;
 
   setTimeout(function(){
-   $('.proj_title2 h1').css('display', 'inline-block');
+   $('.proj_title2 h1').css('display', 'block');
    typeEffect($('.proj_title2 h1'), speed);
  }, delay);
 });
