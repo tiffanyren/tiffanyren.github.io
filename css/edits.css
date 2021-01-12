@@ -62,6 +62,7 @@ IMG & BUTTON -------------------
     position: relative;
     height: auto;
     max-width: 100%;
+    padding: 2em 5em 5em 5em;
 }
 
 .container_edits h1 {
@@ -70,10 +71,10 @@ IMG & BUTTON -------------------
     text-align: center;
 }
 
-.container_edits .header_img {
+/* .container_edits .header_img {
     padding: 2em;
     padding-top: 0em;
-}
+} */
 
 .container_edits .container_style1 {
     background-color: white;
