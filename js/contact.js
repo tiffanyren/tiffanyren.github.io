@@ -1,27 +1,39 @@
 function showForm() {
-	var show = document.getElementById("contact_form");
-	if (!show.style.display || show.style.display === "none") {
-		show.style.display = "flex";
+	var show1 = document.getElementById("contact_form");
+	var show2 = document.getElementById("website");
+	var show3 = document.getElementById("linkedin");
+	if (!show1.style.display || show1.style.display === "none") {
+		show1.style.display = "flex";
+		show2.style.display = "none";
+		show3.style.display = "none";
 	  } else {
-		show.style.display = "none";
+		show1.style.display = "none";
 	  }
   }
  
   function showSite() {
-	var show = document.getElementById("website");
-	if (!show.style.display || show.style.display === "none") {
-	  show.style.display = "inline";
+	var show1 = document.getElementById("contact_form");
+	var show2 = document.getElementById("website");
+	var show3 = document.getElementById("linkedin");
+	if (!show2.style.display || show2.style.display === "none") {
+	  show2.style.display = "inline";
+	  show1.style.display = "none";
+	  show3.style.display = "none";
 	} else {
-	  show.style.display = "none";
+	  show2.style.display = "none";
 	}
   }
 
   function showIn() {
-	var show = document.getElementById("linkedin");
-	if (!show.style.display || show.style.display === "none") {
-	  show.style.display = "inline";
+	var show1 = document.getElementById("contact_form");
+	var show2 = document.getElementById("website");
+	var show3 = document.getElementById("linkedin");
+	if (!show3.style.display || show3.style.display === "none") {
+		show1.style.display = "none";
+		show2.style.display = "none";
+		show3.style.display = "inline";
 	} else {
-	  show.style.display = "none";
+	  show3.style.display = "none";
 	}
   }
 
