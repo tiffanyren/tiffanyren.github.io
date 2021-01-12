@@ -3,10 +3,25 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body, html {
     height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('../img/dino-reichmuth-98982.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   body {
@@ -201,6 +216,8 @@ FOOTER -------------------
 
  footer {
   display: flex;
+  position: absolute;
+  bottom: 0;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: black;

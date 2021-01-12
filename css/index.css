@@ -1,20 +1,3 @@
-body, html {
-    height: 100%;
-  }
-  
-  .parallax {
-    /* The image used */
-    background-image: url('../img/dino-reichmuth-98982.jpg');
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 /* 
 NAVIGATION -------------------
 */
@@ -134,12 +117,12 @@ BIOGRAPHY -------------------
 .container_bio .block {
     display: block;
     margin: auto;
-    padding: 8em;
+    padding: 5em;
     flex-basis: 40%;
 }
 
 .container_bio .block p {
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .container_bio .block h1{
@@ -148,7 +131,7 @@ BIOGRAPHY -------------------
 
 .container_bio .block2 {
     display: block;
-    padding: 5em 10em;
+    padding: 5em;
     flex-basis: 60%;
 }
 
@@ -196,8 +179,7 @@ PROJECTS -------------------
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 10em 1em;
     background-color: white;
     color: black;
     text-align: center;
