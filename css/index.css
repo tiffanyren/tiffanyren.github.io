@@ -45,6 +45,40 @@ IMG & BUTTON -------------------
     max-width: 100%;
 } */
 
+.container_cloud1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+}
+
+.container_cloud1 img {
+    width: 90%;
+    height: auto;
+}
+
+.container_cloud2, .container_cloud3 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: row;
+    opacity: 0.6;
+}
+
+.container_cloud2 img {
+    width: 60%;
+    height: auto;
+}
+
+.container_cloud3 img {
+    width: 50%;
+    height: auto;
+}
+
+
 .container_home .container_buttons {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -221,6 +255,20 @@ RESPONSIVENESS -------------------
     .container_proj2{
         flex-basis: 25%;
     }
+
+    .container_cloud1 {
+        top: 34%;
+        left: 10%;
+    }
+    .container_cloud2 {
+        top: 50%;
+        left: 60%;
+    }
+    .container_cloud3 {
+        top: 18%;
+        left: 51%;
+    }
+
 }
 
 @media (min-width: 40em) and (max-width: 60em) {
@@ -234,6 +282,10 @@ RESPONSIVENESS -------------------
     }
     .container_proj2{
         flex-basis: 25%;
+    }
+
+    .container_cloud1, .container_cloud2, .container_cloud3 {
+        display: none;
     }
 }
 
@@ -249,6 +301,10 @@ RESPONSIVENESS -------------------
     .container_proj2{
         flex-basis: 50%;
     }
+
+    .container_cloud1, .container_cloud2, .container_cloud3 {
+        display: none;
+    }
 }
 
 @media (max-width: 30em) {
@@ -262,5 +318,9 @@ RESPONSIVENESS -------------------
     }
     .container_proj2 {
         flex-basis: 100%;
+    }
+
+    .container_cloud1, .container_cloud2, .container_cloud3 {
+        display: none;
     }
 }
