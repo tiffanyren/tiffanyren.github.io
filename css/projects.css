@@ -1,9 +1,11 @@
+
 .container_listing {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2em;
+    
 }
 
 .container_listing .container_imgs {

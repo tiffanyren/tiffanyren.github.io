@@ -2,30 +2,7 @@
 NAVIGATION -------------------
 */
 
-.container_nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 3.5em;
-    padding-right: 2em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: transparent;
-    z-index: 1;
-    transition: background-color 0.5s ease;
-}
 
-.container_nav:hover, .container_nav:active, .container_nav:focus {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.container_nav .scrolled {
-    background-color: black;
-    transition: none;
-}
 
 /* 
 MAIN INDEX -------------------
@@ -40,10 +17,26 @@ MAIN INDEX -------------------
 IMG & BUTTON -------------------
 */
 
-/* .container_home {
+.container_home {
     height: 100%;
     max-width: 100%;
-} */
+}
+
+.container_starryeffect {
+    position: absolute;
+    transform: translate(132%,230%);
+    -ms-transform: translate(150%, -60%);
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.container_starryeffect img {
+    width: 65%;
+    height: auto;
+}
+
 
 .container_cloud1 {
     position: absolute;
@@ -81,34 +74,32 @@ IMG & BUTTON -------------------
 
 .container_home .container_buttons {
     position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
+    -ms-transform: translate(-50%, -80%);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.button_nav {
+.button_nav1 {
     font-family: garamond-premier-pro, serif;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
     margin: 0.5rem;
     font-size: 3rem;
     text-decoration: none;
     transition: all 0.5s ease;
-}
-
-.button_trans {
-    color: white;
+    color: rgb(255, 255, 255,0.8);
     background-color: transparent;
-    border: 0.1em solid white;
 }
 
-.button_trans:active, .button_trans:hover, .button_trans:focus {
+
+.button_nav1:active, .button_nav1:hover, .button_nav1:focus {
     color: white;
-    background-color: black;
-    border: 0.1em solid black;
     text-decoration: none;
 }
+
 
 .button_nav2 {
     font-family: garamond-premier-pro, serif;
@@ -146,6 +137,7 @@ BIOGRAPHY -------------------
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .container_bio .block {
@@ -209,7 +201,7 @@ PROJECTS -------------------
     display: none;
 }
 
-.container_proj {
+/* .container_proj {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -240,11 +232,36 @@ PROJECTS -------------------
     justify-content: space-around;
     padding: 1em;
     flex-basis: 25%;
-}
+} */
 
 /* 
 RESPONSIVENESS -------------------
 */
+
+@media (min-width: 90em) {
+
+    .container_home .container_buttons {
+        top: 60%;
+        left: 50%;
+    }
+    .container_proj2{
+        flex-basis: 25%;
+    }
+
+    .container_cloud1 {
+        top: 34%;
+        left: 10%;
+    }
+    .container_cloud2 {
+        top: 50%;
+        left: 60%;
+    }
+    .container_cloud3 {
+        top: 18%;
+        left: 51%;
+    }
+
+}
 
 @media (min-width: 60em) {
 
@@ -271,13 +288,13 @@ RESPONSIVENESS -------------------
 
 }
 
-@media (min-width: 40em) and (max-width: 60em) {
+@media (min-width: 45em) and (max-width: 60em) {
     .container_home .container_buttons {
         top: 65%;
         left: 50%;
     }
     .button_nav {
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 1.5rem;
     }
     .container_proj2{
@@ -287,15 +304,39 @@ RESPONSIVENESS -------------------
     .container_cloud1, .container_cloud2, .container_cloud3 {
         display: none;
     }
+
+}
+
+@media (min-width: 40em) and (max-width: 45em) {
+    .container_home .container_buttons {
+        top: 65%;
+        left: 50%;
+    }
+    .button_nav {
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    .container_proj2{
+        flex-basis: 25%;
+    }
+
+    .container_cloud1, .container_cloud2, .container_cloud3 {
+        display: none;
+    }
+
+            .background-wrapper {
+        background-size: 200%;
+    }
+
 }
 
 @media (min-width: 30em) and (max-width: 40em) {
     .container_home .container_buttons {
-        top: 70%;
+        top: 50%;
         left: 50%;
     }
     .button_nav {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
         padding: 1rem;
     }
     .container_proj2{
@@ -305,15 +346,19 @@ RESPONSIVENESS -------------------
     .container_cloud1, .container_cloud2, .container_cloud3 {
         display: none;
     }
+
+        .background-wrapper {
+        background-size: 200%;
+    }
 }
 
 @media (max-width: 30em) {
     .container_home .container_buttons {
-        top: 80%;
+        top: 50%;
         left: 50%;
     }
     .button_nav {
-        font-size: 1.2rem;
+        font-size: 2rem;
         padding: 1rem;
     }
     .container_proj2 {
@@ -323,4 +368,9 @@ RESPONSIVENESS -------------------
     .container_cloud1, .container_cloud2, .container_cloud3 {
         display: none;
     }
+    
+    .background-wrapper {
+        background-size: 400%;
+    }
+
 }
