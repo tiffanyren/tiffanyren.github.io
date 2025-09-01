@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i');
-@import url('https://fonts.google.com/specimen/IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,600,600i');
 @import url("https://use.typekit.net/qec4opu.css");
+@import url('https://fonts.googleapis.com/css?family=Pixelify+Sans:300,300i,400,400i,600,600i');
 
 * {
   box-sizing: border-box;
@@ -33,25 +34,12 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    gap: 3em;
 }
-
-/* .container_content .container_imgs {
-    flex-direction: column;
-}
-
-.container_imgs img {
-    margin-bottom: 1em;
-}
-
-.container_content .container_desc {
-    display: flex;
-    flex-direction: column;
-} */
-
 
 /* .parallax {
   background-color: black;
@@ -68,7 +56,7 @@ html {
 } */
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   padding: 0;
@@ -168,10 +156,10 @@ label {
 LOGO -------------------
 */
 
-.img_logo {
+/* .img_logo {
   max-height: 3em;
   width: auto;
-}
+} */
 
 /* 
 NAVIGATION -------------------
@@ -204,12 +192,12 @@ nav {
   transition: all 0.5s ease;
   text-transform: lowercase;
   color: rgba(255, 255, 255, 0.8);
+  padding-right:0.5em;
 }
 
 .nav_right nav a:active,
 .nav_right nav a:hover,
 .nav_right nav a:focus {
-  /*border-bottom: 0.05em solid whitesmoke;*/
   color: white;
 }
 
@@ -236,11 +224,6 @@ HEADER BAR -------------------
   border-radius: 12px;
 }
 
-/*
-.container_nav:hover, .container_nav:active, .container_nav:focus {
-    background-color: rgba(255, 255, 255, 0.24);
-} */
-
 .container_nav .scrolled {
   background-color: rgba(223, 157, 185, 1);
   transition: none;
@@ -257,18 +240,6 @@ HEADER BAR -------------------
   margin-top: auto;
   margin-bottom: auto;
 }
-
-/* p a {
-  color: white;
-  text-decoration: underline;
-}
-
-p a:hover,
-p a:focus,
-p a:active {
-  color: lightgrey;
-} */
-
 
 
 /* 

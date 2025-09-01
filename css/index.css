@@ -17,6 +17,11 @@ MAIN INDEX -------------------
 IMG & BUTTON -------------------
 */
 
+.big {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 5rem;
+}
+
 .container_home {
     height: 100%;
     max-width: 100%;
@@ -101,35 +106,9 @@ IMG & BUTTON -------------------
     flex-direction: column;
 }
 
-/* .button_nav2 {
-    font-family: garamond-premier-pro, serif;
-    display: inline-block;
-    padding: 1.4rem;
-    margin: 0.5rem;
-    font-size: 1.8rem;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.button_trans2 {
-    color: black;
-    background-color: transparent;
-    border: none;
-}
-
-.button_trans2:active,
-.button_trans2:hover,
-.button_trans2:focus {
-    color: white;
-    background-color: black;
-    border: none;
-    text-decoration: none;
-} */
-
 /* About me */
 
 .window_right .aboutme {
-    top: 8.25em;
     background-color: white;
     padding: 0em;
     height: fit-content;
@@ -138,136 +117,39 @@ IMG & BUTTON -------------------
     width: auto;
 }
 
-#aboutme {
+#aboutme,#projects {
     padding-top:8.25em;
 }
 
 .about_content {
     display:flex;
     flex-direction:row;
-    gap:3em;
-    margin:3em;
+    gap:2em;
+    padding:2em;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.window_right .projects {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    width: auto;
 }
 
 .vertical_content_block {
     display:flex;
     flex-direction: column;
     gap: 1em;
+    flex-basis: 25%;
+    min-width: 120px;
 }
 
 .vertical_content_block p {
-    padding-bottom:1.5em;
+    padding-bottom:2em;
 }
-
-/* 
-BIOGRAPHY -------------------
-*/
-/* 
-.container_index .container_bio {
-    background-color: white;
-    height: auto;
-    max-width: 100%;
-    padding: 3rem;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.container_bio .block {
-    display: block;
-    margin: auto;
-    padding: 5em;
-    flex-basis: 40%;
-}
-
-.container_bio .block p {
-    font-size: 1.9rem;
-}
-
-.container_bio .block h1 {
-    font-size: 4em;
-}
-
-.container_bio .block2 {
-    display: block;
-    padding: 5em;
-    flex-basis: 60%;
-}
-
-.container_bio .block2 h3 {
-    color: lightslategray;
-}
-
-.container_bio .block2 p {
-    font-size: 1.7rem;
-}
-
-.container_bio li {
-    padding: 0.5rem 3rem;
-} */
-
-/* 
-PROJECTS -------------------
-*/
-
-/* .proj_title {
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 0;
-    text-align: center;
-}
-
-.proj_title h1 {
-    display: none;
-}
-
-.proj_title2 {
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 0;
-    text-align: center;
-}
-
-.proj_title2 h1 {
-    display: none;
-} */
-
-/* .container_proj {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10em 1em;
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-
-.container_proj2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}
-
-.container_proj .block {
-    justify-content: space-around;
-    padding: 1em;
-    flex-basis: 25%;
-}
-
-.container_proj .block:active, .container_proj .block:hover, .container_proj .block:focus {
-    opacity: 0.7;
-}
-
-.container_proj .block2 {
-    justify-content: space-around;
-    padding: 1em;
-    flex-basis: 25%;
-} */
 
 /* 
 RESPONSIVENESS -------------------
