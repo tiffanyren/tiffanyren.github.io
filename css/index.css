@@ -106,9 +106,15 @@ IMG & BUTTON -------------------
     flex-direction: column;
 }
 
+/* Windows */
+
+#aboutme,#projects {
+    padding-top:8.25em;
+}
+
 /* About me */
 
-.window_right .aboutme {
+.aboutme {
     background-color: white;
     padding: 0em;
     height: fit-content;
@@ -117,11 +123,7 @@ IMG & BUTTON -------------------
     width: auto;
 }
 
-#aboutme,#projects {
-    padding-top:8.25em;
-}
-
-.about_content {
+.window_content {
     display:flex;
     flex-direction:row;
     gap:2em;
@@ -130,7 +132,7 @@ IMG & BUTTON -------------------
     justify-content:space-around;
 }
 
-.window_right .projects {
+.projects {
     background-color: white;
     padding: 0em;
     height: fit-content;
@@ -139,7 +141,7 @@ IMG & BUTTON -------------------
     width: auto;
 }
 
-.vertical_content_block {
+.three_column_block {
     display:flex;
     flex-direction: column;
     gap: 1em;
@@ -147,8 +149,13 @@ IMG & BUTTON -------------------
     min-width: 120px;
 }
 
-.vertical_content_block p {
-    padding-bottom:2em;
+.project_listing {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+    flex-basis: 45%;
+    min-width: 120px;
 }
 
 /* 
