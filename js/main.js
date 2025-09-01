@@ -47,24 +47,24 @@ window.addEventListener('scroll', function() {
 
 $( document ).ready(function() {
   var speed = 100;
-  var delay = $('.container_home p').text().length * speed + speed;
+  var delay = $('.container_buttons .big').text().length * speed + speed;
 
-  typeEffect($('.container_home p'), speed);
+  typeEffect($('.container_buttons .big'), speed);
  
-  setTimeout(function(){
-    $('.proj_title h1').css('display', 'block');
-    typeEffect($('.proj_title h1'), speed);
-  }, delay);
+//   setTimeout(function(){
+//     $('.proj_title h1').css('display', 'block');
+//     typeEffect($('.proj_title h1'), speed);
+//   }, delay);
 
-  delay += $('.proj_title h1').text().length * speed + speed;
+//   delay += $('.proj_title h1').text().length * speed + speed;
 
-  setTimeout(function(){
-   $('.proj_title2 h1').css('display', 'block');
-   typeEffect($('.proj_title2 h1'), speed);
- }, delay);
+//   setTimeout(function(){
+//    $('.proj_title2 h1').css('display', 'block');
+//    typeEffect($('.proj_title2 h1'), speed);
+//  }, delay);
 });
 
-document.querySelectorAll('.button_nav1').forEach(function(btn) {
+document.querySelectorAll('.container_buttons').forEach(function(btn) {
     btn.addEventListener('mouseenter', function() {
         document.querySelector('.container_starryeffect').style.opacity = '1';
     });

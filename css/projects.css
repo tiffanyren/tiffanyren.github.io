@@ -1,29 +1,27 @@
-
-.container_listing {
+.container_content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2em;
-    
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.container_listing .container_imgs {
+.container_content .container_imgs {
     flex-direction: column;
-    padding: 3em;
-    padding-left: 8em;
 }
 
 .container_imgs img {
     margin-bottom: 1em;
 }
 
-.container_listing .container_desc {
+.container_content .container_desc {
     display: flex;
     flex-direction: column;
 }
 
-.container_desc .sticky {
+/* .container_desc .sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 6.25em;
@@ -31,13 +29,13 @@
     padding: 0em 2em;
     padding-right: 8em;
     flex-direction: column;
-}
+} */
 
 /* 
 BUTTON -------------------
 */
 
-.button_trans {
+/* .button_trans {
     color: white;
     background-color: transparent;
     border: 0.1em solid white;
@@ -71,45 +69,51 @@ BUTTON -------------------
     background-color: black;
     border: none;
     text-decoration: none;
-}
+} */
 
 /* 
 RESPONSIVENESS -------------------
 */
 
 @media (min-width: 65em) {
-    .container_listing .container_imgs {
+    .container_content .container_imgs {
         flex-basis: 60%;
     }
-    .container_listing .container_desc {
+
+    .container_content .container_desc {
         flex-basis: 40%;
     }
+
     .container_review {
         margin: 2em 8em;
     }
 }
 
 @media (min-width: 45em) and (max-width: 65em) {
-    .container_listing .container_imgs {
+    .container_content .container_imgs {
         flex-basis: 60%;
         padding-left: 3em;
     }
-    .container_listing .container_desc {
+
+    .container_content .container_desc {
         flex-basis: 40%;
     }
+
     .container_desc .sticky {
         padding: 0em 2em;
     }
 }
 
 @media (max-width: 45em) {
-    .container_listing .container_imgs {
+    .container_content .container_imgs {
         flex-basis: 100%;
         padding-left: 3em;
     }
-    .container_listing .container_desc {
+
+    .container_content .container_desc {
         flex-basis: 100%;
     }
+
     .container_desc .sticky {
         padding: 0em 2em;
     }

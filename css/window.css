@@ -1,0 +1,116 @@
+/* THIS PAGE HAS WINDOW ELEMENTS CONSISTENT ACROSS THE SITE. FOR SPECIFIC SECTIONS, GO TO INDEX.CSS */
+
+.window_right {
+    flex-direction: column;
+    flex-basis:70%;
+}
+
+/* profile */
+
+.window_left .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 8.25em;
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    flex-basis:30%
+}
+
+.profile_circle_inner {
+    height: 128px;
+    width: 128px;
+    background-image: url('../img/bunny-profile-gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile_circle {
+    height: 148px;
+    width: 148px;
+    background-color: rgb(255, 228, 247);
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.window_left .sticky h3,
+.window_left .sticky p {
+    margin: 0em 0em 0em;
+    padding: 0em 0em 0em;
+    color: black;
+    text-align: center;
+}
+
+.window_left .sticky p {
+    padding: 0.5em 0em 1em 0em;
+}
+
+/* Windows Header Bar */
+
+.window_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.3em 1em;
+    background-color: rgb(255, 228, 247);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid grey;
+}
+
+.window_bar .window_title {
+    font-size: 1.4rem;
+    margin: 0em 0em 0em;
+    padding-top: 0.1em;
+    color: black;
+    align-items: end;
+    display: inline;
+}
+
+.window_bar .window_buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+}
+
+/* Window Buttons */
+
+.circle {
+    height: 12px;
+    width: 12px;
+    background-color: grey;
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.c1 {
+    background-color: rgb(244, 196, 205);
+}
+
+.c2 {
+    background-color: rgb(254, 246, 196);
+}
+
+.c3 {
+    background-color: rgb(220, 244, 205);
+}

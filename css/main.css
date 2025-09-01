@@ -1,30 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i');
+@import url('https://fonts.google.com/specimen/IBM+Plex+Sans');
 @import url("https://use.typekit.net/qec4opu.css");
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
   height: 100%;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-.background-wrapper { 
+.background-wrapper {
 
-    background-image: url('../img/digital-art-style-sky-landscape-with-moon.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center top;
-    width: 100%; 
-    min-height: 100vh; 
+  background-image: url('../img/digital-art-style-sky-landscape-with-moon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .container_home {
   height: 100%;
   max-width: 100%;
 }
+
+.container_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* .container_content .container_imgs {
+    flex-direction: column;
+}
+
+.container_imgs img {
+    margin-bottom: 1em;
+}
+
+.container_content .container_desc {
+    display: flex;
+    flex-direction: column;
+} */
 
 
 /* .parallax {
@@ -47,8 +73,7 @@ body {
   font-size: 1.5rem;
   padding: 0;
   margin: 0;
-  color: #292830;
-  /* main text color ^^ */
+  color: black;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -58,7 +83,8 @@ video {
   height: auto;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
@@ -78,20 +104,21 @@ img {
   margin-top: 1rem;
 }
 
+
+
 /* 
     TEXT ELEMENTS -------------------
   */
 
 h1 {
-  font-family: garamond-premier-pro, serif;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
+  color:white;
   /* text-align: center; */
 }
 
 h2 {
-  font-family: garamond-premier-pro, serif;
   margin-top: 1rem;
   font-size: 2.5rem;
   font-weight: 400;
@@ -102,7 +129,7 @@ h3 {
   font-weight: bold;
   font-size: 2rem;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   /* text-align: center; */
 }
 
@@ -117,7 +144,7 @@ h4 {
 }
 
 p {
-  padding: 0.5em 0em;
+  /* padding: 0.5em 0em; */
   font-weight: normal;
   /* text-align: center; */
 }
@@ -147,22 +174,21 @@ LOGO -------------------
 }
 
 /* 
-NAVIGATION BAR -------------------
+NAVIGATION -------------------
 */
 
 nav {
   display: flex;
   z-index: 1;
   overflow: hidden;
-
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .nav_left nav a {
   font-size: 2.4rem;
-  display:block;
+  display: block;
   text-transform: lowercase;
-  color: rgba(255, 255, 255);
+  color: white;
   margin-top: auto;
   margin-bottom: auto;
 
@@ -180,8 +206,10 @@ nav {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.nav_right nav a:active, .nav_right nav a:hover, .nav_right nav a:focus {
-/*border-bottom: 0.05em solid whitesmoke;*/
+.nav_right nav a:active,
+.nav_right nav a:hover,
+.nav_right nav a:focus {
+  /*border-bottom: 0.05em solid whitesmoke;*/
   color: white;
 }
 
@@ -190,22 +218,22 @@ HEADER BAR -------------------
 */
 
 .container_nav {
-    position: fixed;
-    width: 80%;
-    top: 2em;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(255,255,255,0.08);
-    z-index: 1;
-    transition: background-color 0.5s ease;
-    border-radius:16px;
+  position: fixed;
+  width: 80%;
+  top: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255, 0.08);
+  z-index: 1;
+  transition: background-color 0.5s ease;
+  border-radius: 12px;
 }
 
 /*
@@ -214,8 +242,8 @@ HEADER BAR -------------------
 } */
 
 .container_nav .scrolled {
-    background-color: rgba(223, 157, 185, 1);
-    transition: none;
+  background-color: rgba(223, 157, 185, 1);
+  transition: none;
 }
 
 .nav_left {
@@ -230,31 +258,24 @@ HEADER BAR -------------------
   margin-bottom: auto;
 }
 
-a h1 {
-  text-decoration: none;
-  text-align: left;
-  display: inline-block;
-  color: #292830;
-}
-
-nav a {
-  margin-right: 0.5em;
-}
-
-p a {
+/* p a {
   color: white;
   text-decoration: underline;
 }
 
-p a:hover, p a:focus, p a:active {
+p a:hover,
+p a:focus,
+p a:active {
   color: lightgrey;
-}
+} */
+
+
 
 /* 
 FOOTER -------------------
 */
 
-footer {
+/* footer {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -270,4 +291,4 @@ footer {
 
 footer p {
   font-family: garamond-premier-pro, serif;
-}
+} */

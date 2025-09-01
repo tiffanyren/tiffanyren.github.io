@@ -22,18 +22,38 @@ IMG & BUTTON -------------------
     max-width: 100%;
 }
 
+.container_buttons a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom:1em;
+    transition: all 0.5s ease;
+    color: rgb(255, 255, 255, 0.8);
+    background-color: transparent;
+}
+
+.container_buttons a:hover,
+.container_buttons a:focus, 
+.container_buttons a:active {
+  text-decoration: none;
+  color: white;
+}
+
 .container_starryeffect {
-    position: absolute;
-    transform: translate(132%,230%);
-    -ms-transform: translate(150%, -60%);
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
     display: flex;
     flex-direction: row;
+    margin-top:2em;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 .container_starryeffect img {
-    width: 65%;
+    width: 30%;
     height: auto;
 }
 
@@ -52,7 +72,8 @@ IMG & BUTTON -------------------
     height: auto;
 }
 
-.container_cloud2, .container_cloud3 {
+.container_cloud2,
+.container_cloud3 {
     position: absolute;
     transform: translate(50%, -50%);
     -ms-transform: translate(50%, -50%);
@@ -80,28 +101,7 @@ IMG & BUTTON -------------------
     flex-direction: column;
 }
 
-.button_nav1 {
-    font-family: garamond-premier-pro, serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    margin: 0.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    color: rgb(255, 255, 255,0.8);
-    background-color: transparent;
-}
-
-
-.button_nav1:active, .button_nav1:hover, .button_nav1:focus {
-    color: white;
-    text-decoration: none;
-}
-
-
-.button_nav2 {
+/* .button_nav2 {
     font-family: garamond-premier-pro, serif;
     display: inline-block;
     padding: 1.4rem;
@@ -117,19 +117,54 @@ IMG & BUTTON -------------------
     border: none;
 }
 
-.button_trans2:active, .button_trans2:hover, .button_trans2:focus {
+.button_trans2:active,
+.button_trans2:hover,
+.button_trans2:focus {
     color: white;
     background-color: black;
     border: none;
     text-decoration: none;
+} */
+
+/* About me */
+
+.window_right .aboutme {
+    top: 8.25em;
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    width: auto;
+}
+
+#aboutme {
+    padding-top:8.25em;
+}
+
+.about_content {
+    display:flex;
+    flex-direction:row;
+    gap:3em;
+    margin:3em;
+}
+
+.vertical_content_block {
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.vertical_content_block p {
+    padding-bottom:1.5em;
 }
 
 /* 
 BIOGRAPHY -------------------
 */
-
+/* 
 .container_index .container_bio {
-    background-color:white;
+    background-color: white;
     height: auto;
     max-width: 100%;
     padding: 3rem;
@@ -151,7 +186,7 @@ BIOGRAPHY -------------------
     font-size: 1.9rem;
 }
 
-.container_bio .block h1{
+.container_bio .block h1 {
     font-size: 4em;
 }
 
@@ -171,13 +206,13 @@ BIOGRAPHY -------------------
 
 .container_bio li {
     padding: 0.5rem 3rem;
-}
+} */
 
 /* 
 PROJECTS -------------------
 */
 
-.proj_title {
+/* .proj_title {
     margin: auto;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -199,7 +234,7 @@ PROJECTS -------------------
 
 .proj_title2 h1 {
     display: none;
-}
+} */
 
 /* .container_proj {
     display: flex;
@@ -244,7 +279,8 @@ RESPONSIVENESS -------------------
         top: 60%;
         left: 50%;
     }
-    .container_proj2{
+
+    .container_proj2 {
         flex-basis: 25%;
     }
 
@@ -252,10 +288,12 @@ RESPONSIVENESS -------------------
         top: 34%;
         left: 10%;
     }
+
     .container_cloud2 {
         top: 50%;
         left: 60%;
     }
+
     .container_cloud3 {
         top: 18%;
         left: 51%;
@@ -269,7 +307,8 @@ RESPONSIVENESS -------------------
         top: 60%;
         left: 50%;
     }
-    .container_proj2{
+
+    .container_proj2 {
         flex-basis: 25%;
     }
 
@@ -277,10 +316,12 @@ RESPONSIVENESS -------------------
         top: 34%;
         left: 10%;
     }
+
     .container_cloud2 {
         top: 50%;
         left: 60%;
     }
+
     .container_cloud3 {
         top: 18%;
         left: 51%;
@@ -293,15 +334,19 @@ RESPONSIVENESS -------------------
         top: 65%;
         left: 50%;
     }
+
     .button_nav {
         font-size: 3rem;
         padding: 1.5rem;
     }
-    .container_proj2{
+
+    .container_proj2 {
         flex-basis: 25%;
     }
 
-    .container_cloud1, .container_cloud2, .container_cloud3 {
+    .container_cloud1,
+    .container_cloud2,
+    .container_cloud3 {
         display: none;
     }
 
@@ -312,19 +357,23 @@ RESPONSIVENESS -------------------
         top: 65%;
         left: 50%;
     }
+
     .button_nav {
         font-size: 3rem;
         padding: 1.5rem;
     }
-    .container_proj2{
+
+    .container_proj2 {
         flex-basis: 25%;
     }
 
-    .container_cloud1, .container_cloud2, .container_cloud3 {
+    .container_cloud1,
+    .container_cloud2,
+    .container_cloud3 {
         display: none;
     }
 
-            .background-wrapper {
+    .background-wrapper {
         background-size: 200%;
     }
 
@@ -335,19 +384,23 @@ RESPONSIVENESS -------------------
         top: 50%;
         left: 50%;
     }
+
     .button_nav {
         font-size: 2.6rem;
         padding: 1rem;
     }
-    .container_proj2{
+
+    .container_proj2 {
         flex-basis: 50%;
     }
 
-    .container_cloud1, .container_cloud2, .container_cloud3 {
+    .container_cloud1,
+    .container_cloud2,
+    .container_cloud3 {
         display: none;
     }
 
-        .background-wrapper {
+    .background-wrapper {
         background-size: 200%;
     }
 }
@@ -357,18 +410,22 @@ RESPONSIVENESS -------------------
         top: 50%;
         left: 50%;
     }
+
     .button_nav {
         font-size: 2rem;
         padding: 1rem;
     }
+
     .container_proj2 {
         flex-basis: 100%;
     }
 
-    .container_cloud1, .container_cloud2, .container_cloud3 {
+    .container_cloud1,
+    .container_cloud2,
+    .container_cloud3 {
         display: none;
     }
-    
+
     .background-wrapper {
         background-size: 400%;
     }
