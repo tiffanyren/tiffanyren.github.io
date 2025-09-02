@@ -2,7 +2,7 @@
 
 #aboutme,
 #projects {
-    padding-top: 8.25em;
+    padding-top: 11em;
 }
 
 .window_right {
@@ -52,7 +52,7 @@
 .window_left .sticky {
     position: sticky;
     position: -webkit-sticky;
-    top: 8.25em;
+    top: 11em;
     background-color: white;
     padding: 0em;
     height: fit-content;
@@ -136,6 +136,10 @@
     min-width: 120px;
 }
 
+.three_column_block img {
+    max-width: 300px;
+}
+
 /* Projects */
 
 .projects {
@@ -157,7 +161,7 @@
     gap: 1em;
     min-width: 120px;
     flex-basis: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(245, 245, 245);
     padding: 2em;
     border-radius: 12px;
     outline: 1px solid black;

@@ -106,58 +106,6 @@ IMG & BUTTON -------------------
     flex-direction: column;
 }
 
-/* Windows */
-
-#aboutme,#projects {
-    padding-top:8.25em;
-}
-
-/* About me */
-
-.aboutme {
-    background-color: white;
-    padding: 0em;
-    height: fit-content;
-    border-radius: 12px;
-    outline: 1px solid black;
-    width: auto;
-}
-
-.window_content {
-    display:flex;
-    flex-direction:row;
-    gap:2em;
-    padding:2em;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
-
-.projects {
-    background-color: white;
-    padding: 0em;
-    height: fit-content;
-    border-radius: 12px;
-    outline: 1px solid black;
-    width: auto;
-}
-
-.three_column_block {
-    display:flex;
-    flex-direction: column;
-    gap: 1em;
-    flex-basis: 25%;
-    min-width: 120px;
-}
-
-.project_listing {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 1em;
-    flex-basis: 45%;
-    min-width: 120px;
-}
-
 /* 
 RESPONSIVENESS -------------------
 */
