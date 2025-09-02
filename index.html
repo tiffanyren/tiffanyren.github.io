@@ -14,7 +14,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/window.css">
 
     <!-- JavaScript -->
@@ -29,49 +28,45 @@
     <!-- NAVIGATION -->
     <section class="container_nav">
         <a class="nav_icon_button" href="index.html#top">
-            <img class="img_logo" src="img/icon-home.svg" alt="home icon">
-            <span><h4>tiff's home</h4></span>
+            <img class="img_logo" src="img/nav/icon-home.svg" alt="home icon">
+            <span>
+                <h4>tiff's home</h4>
+            </span>
         </a>
         <a class="nav_icon_button" href="index.html#aboutme">
-            <img class="img_logo" src="img/icon-about.svg" alt="about icon">
-            <span><h4>about me</h4></span>
+            <img class="img_logo" src="img/nav/icon-about.svg" alt="about icon">
+            <span>
+                <h4>about me</h4>
+            </span>
         </a>
-        <a class="nav_icon_button" href="index.html#projects">
-            <img class="img_logo" src="img/icon-projects.svg" alt="projects icon">
-            <span><h4>projects</h4></span>
+        <a class="nav_icon_button" href="index.html#work">
+            <img class="img_logo" src="img/nav/icon-projects.svg" alt="design work icon">
+            <span>
+                <h4>design work</h4>
+            </span>
+        </a>
+        <a class="nav_icon_button" href="index.html#otherprojects">
+            <img class="img_logo" src="img/nav/icon-explore.svg" alt="other projects icon">
+            <span>
+                <h4>other projects</h4>
+            </span>
         </a>
         <a class="nav_icon_button" href="index.html">
-            <img class="img_logo" src="img/icon-explore.svg" alt="home icon">
-            <span><h4>explorations</h4></span>
+            <img class="img_logo" src="img/nav/icon-hobby.svg" alt="hobbies icon">
+            <span>
+                <h4>hobbies</h4>
+            </span>
         </a>
-        <a class="nav_icon_button" href="index.html">
-            <img class="img_logo" src="img/icon-hobby.svg" alt="home icon">
-            <span><h4>hobbies</h4></span>
-        </a>
-        <!-- <div class="nav_left">
-            <nav>
-                <a href="index.html"><img class="img_logo" src="img/bunny.png" alt="bunny logo" style="scale:60%"></a>
-                <a href="index.html">tiffany ren</a>
-            </nav>
-        </div>
-        <div class="nav_right">
-            <nav>
-                <a href="index.html#aboutme">About me</a>
-                <a href="index.html#projects">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div> -->
     </section>
 
     <section class="container_index">
-        <!-- <div class="container_background"> -->
         <!-- TOP SECTION -->
         <div class="container_home">
             <!-- <div class="parallax parallax_first" style="background-image: url('img/digital-art-style-sky-landscape-with-moon.jpg')"></div> -->
-            <div class="container_starryeffect"><img src="img/starry-effect.png"></div>
-            <div class="container_cloud1"><img src="img/cloud-rhs-smaller.png"></div>
-            <div class="container_cloud2"><img src="img/Clouds_03.png"></div>
-            <div class="container_cloud3"><img src="img/cloud-png-top-view.png"></div>
+            <div class="container_starryeffect"><img src="img/home/starry-effect.png" alt="starry effect"></div>
+            <div class="container_cloud1"><img src="img/home/cloud-rhs-smaller.png" alt="cloud decoration"></div>
+            <div class="container_cloud2"><img src="img/home/Clouds_03.png" alt="cloud decoration"></div>
+            <div class="container_cloud3"><img src="img/home/cloud-png-top-view.png" alt="cloud decoration"></div>
             <div class="container_buttons" id="tagline">
                 <a href="#aboutme">
                     <h1>dreaming in a</h1>
@@ -81,27 +76,51 @@
             </div>
         </div>
 
-        <!-- PROJECTS/WORKS -->
+        <!-- WORKS -->
         <section>
             <div class="container_content">
                 <!-- PROFILE ON LEFT -->
-                <div class="window_left">
+                <div class="window_left" id="profile">
                     <div class="sticky">
-                        <div class="window_bar">
-                            <h2 class="window_title">me.exe</h2>
-                            <div class="window_buttons">
-                                <span class="circle c1"></span>
-                                <span class="circle c2"></span>
-                                <span class="circle c3"></span>
+                        <div class="sticky_window">
+                            <div class="window_bar">
+                                <h2 class="window_title">me.exe</h2>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="profile_content">
+                                <div class="profile_circle">
+                                    <div class="profile_circle_inner"></div>
+                                </div>
+                                <h3>tiffany ren</h3>
+                                <p>ux & product design</p>
+                                <img src="img/profile/playbuttons.svg" alt="media buttons" style="width:60%">
                             </div>
                         </div>
-                        <div class="profile_content">
-                            <div class="profile_circle">
-                                <div class="profile_circle_inner"></div>
+                        <!-- other links -->
+                        <div class="sticky_window">
+                            <div class="window_bar" style="background-color: rgb(255, 249, 220);">
+                                <h2 class="window_title">other-links.txt</h2>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
                             </div>
-                            <h3>tiffany ren</h3>
-                            <p>ux & product design</p>
-                            <img src="img/playbuttons.svg" alt="media buttons" style="width:60%">
+                            <div class="other_content">
+                                <a href="https://www.linkedin.com/in/tiffanyren/" target="_blank">
+                                    <p>linkedin ↗</p>
+                                </a>
+                                <a href="https://github.com/tiffanyren/tiffanyren.github.io" target="_blank">
+                                    <p>github (this site) ↗</p>
+                                </a>
+                                <a href="https://www.instagram.com/ae.stopia/" target="_blank">
+                                    <p>art instagram ↗</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +169,7 @@
                                     </div>
                                     <div class="window_content">
                                         <div class="three_column_block">
-                                            <img src="img/about-vr.svg">
+                                            <img src="img/about/about-vr.svg" alt="cat with VR glasses saying wow">
                                             <p><span style="font-weight:600">I bring dreams to reality--</span> whether
                                                 it
                                                 be
@@ -159,7 +178,7 @@
                                                 experiences--deployed on VR/AR devices, mobile, desktop and web.</p>
                                         </div>
                                         <div class="three_column_block">
-                                            <img src="img/about-problems.svg">
+                                            <img src="img/about/about-problems.svg" alt="bear thinking out loud">
                                             <p>I’ve solved <span style="font-weight:600">unique problems</span> for
                                                 digital
                                                 products, healthcare providers, entertainment & toys, and automotive
@@ -169,7 +188,7 @@
                                                     workforces.</span></p>
                                         </div>
                                         <div class="three_column_block">
-                                            <img src="img/about-mouse.svg">
+                                            <img src="img/about/about-mouse.svg" alt="dog with laptop and mouse-shaped mouse">
                                             <p>I’ve designed full-time at <span style="font-weight:600"> Unity,
                                                     Capgemini,
                                                     TTT
@@ -186,11 +205,11 @@
                         </div>
                     </section>
 
-                    <!-- PROJECTS -->
-                    <section id="projects">
-                        <div class="projects">
+                    <!-- WORK -->
+                    <section id="work">
+                        <div class="work">
                             <div class="window_bar" style="background-color: rgb(228, 240, 255);">
-                                <h2 class="window_title">projects.exe</h2>
+                                <h2 class="window_title">design-work.exe</h2>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -206,7 +225,7 @@
                             </div>
                             <div class="content_flow">
                                 <div class="content_title">
-                                    <h2>projects</h2>
+                                    <h2>design work</h2>
                                     <p>Clients I’ve designed for include LEGO, Nissan, Cincinnati Children’s Hospital,
                                         alongside other internal projects at Unity, Capgemini, and TTT Studios. Please
                                         reach out for projects not available publicly!</p>
@@ -215,11 +234,49 @@
                                     <!-- MUXI -->
                                     <a class="project_listing" href="projects/muxi.html">
                                         <div class="listing_left">
-                                            <h2>Muxi: AI Product Development</h2>
+                                            <h2>Muxi: AI-Guided Product Planning</h2>
                                             <div class="project_tags">
-                                                <span class="project_tag" style="background-color:lightblue;">ux research</span>
-                                                <span class="project_tag" style="background-color:lightpink;">product design</span>
-                                                <span class="project_tag" style="background-color:bisque;">artificial intelligence</span>
+                                                <span class="project_tag" style="background-color:lightblue;">artificial
+                                                    intelligence</span>
+                                                <span class="project_tag" style="background-color:lightpink;">product
+                                                    leadership</span>
+                                            </div>
+                                            <p>A product planning tool to quickly scope out ideas and create prompts for
+                                                other AI builders.</p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/projects/muxi/Cover2.jpg">
+                                        </div>
+                                    </a>
+                                    <!-- VR3S -->
+                                    <a class="project_listing" href="projects/vr3s.html">
+                                        <div class="listing_left">
+                                            <h2>VR3S: VR Surgical Simulation Suite</h2>
+                                            <div class="project_tags">
+                                                <span class="project_tag"
+                                                    style="background-color:rgb(219, 173, 230);">virtual
+                                                    reality</span>
+                                                <span class="project_tag"
+                                                    style="background-color:lightpink;">multiplayer environment</span>
+                                                <span class="project_tag"
+                                                    style="background-color:bisque;">healthcare</span>
+                                            </div>
+                                            <p>Planning surgeries for infant heart defects in a multiplayer VR
+                                                environment.</p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/about/about-placeholder.svg">
+                                        </div>
+                                    </a>
+                                    <!-- AI Conversational Digital Twin -->
+                                    <a class="project_listing">
+                                        <div class="listing_left">
+                                            <h2>AI Conversational Digital Twin</h2>
+                                            <div class="project_tags">
+                                                <span class="project_tag" style="background-color:lightblue;">artificial
+                                                    intelligence</span>
+                                                <span class="project_tag" style="background-color:lightpink;">digital
+                                                    twin</span>
                                             </div>
                                             <p>I’ve solved <span style="font-weight:600">unique problems</span> for
                                                 digital
@@ -230,55 +287,96 @@
                                                     workforces.</span></p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/about-placeholder.svg">
+                                            <img src="img/about/about-placeholder.svg">
                                         </div>
                                     </a>
 
+                                    <!-- LEGO -->
                                     <a class="project_listing">
                                         <div class="listing_left">
-                                            <h2>Muxi: AI Product Development</h2>
+                                            <h2>LEGO: Mars Perseverance Rover AR</h2>
                                             <div class="project_tags">
-                                                <span class="project_tag" style="background-color:lightblue;">ux research</span>
-                                                <span class="project_tag" style="background-color:lightpink;">product design</span>
-                                                <span class="project_tag" style="background-color:bisque;">artificial intelligence</span>
+                                                <span class="project_tag" style="background-color:lightblue;">augmented
+                                                    reality</span>
+                                                <span class="project_tag" style="background-color:lightpink;">games &
+                                                    education</span>
                                             </div>
-                                            <p>I’ve solved <span style="font-weight:600">unique problems</span> for
-                                                digital
-                                                products, healthcare providers, entertainment & toys, and automotive
-                                                companies,
-                                                with audiences spanning <span style="font-weight:600">young children to
-                                                    skilled
-                                                    workforces.</span></p>
+                                            <p>Creating augmented mobile experiences for LEGO TechnicAR.</p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/about-placeholder.svg">
+                                            <img src="img/about/about-placeholder.svg">
                                         </div>
                                     </a>
 
+                                    <!-- Other UI Artifacts -->
                                     <a class="project_listing">
                                         <div class="listing_left">
-                                            <h2>Muxi: AI Product Development</h2>
+                                            <h2>UI Artifacts</h2>
                                             <div class="project_tags">
-                                                <span class="project_tag" style="background-color:lightblue;">ux research</span>
-                                                <span class="project_tag" style="background-color:lightpink;">product design</span>
-                                                <span class="project_tag" style="background-color:bisque;">artificial intelligence</span>
+                                                <span class="project_tag" style="background-color:lightblue;">mixed
+                                                    reality</span>
+                                                <span class="project_tag" style="background-color:lightpink;">digital
+                                                    twins</span>
                                             </div>
-                                            <p>I’ve solved <span style="font-weight:600">unique problems</span> for
-                                                digital
-                                                products, healthcare providers, entertainment & toys, and automotive
-                                                companies,
-                                                with audiences spanning <span style="font-weight:600">young children to
-                                                    skilled
-                                                    workforces.</span></p>
+                                            <p>UI artifacts from other professional projects.</p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/about-placeholder.svg">
+                                            <img src="img/about/about-placeholder.svg">
                                         </div>
                                     </a>
                                 </div>
                             </div>
                     </section>
 
+                    <!-- OTHER PROJECTS -->
+                    <section id="otherprojects">
+                        <div class="other_projects">
+                            <div class="window_bar" style="background-color: rgb(228, 240, 255);">
+                                <h2 class="window_title">other-projects.exe</h2>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="action_bar">
+                                <p><span style="text-decoration:underline">F</span>ile</p>
+                                <p><span style="text-decoration:underline">E</span>dit</p>
+                                <p><span style="text-decoration:underline">V</span>iew</p>
+                                <p><span style="text-decoration:underline">O</span>ptions</p>
+                                <p><span style="text-decoration:underline">H</span>elp</p>
+                            </div>
+                            <div class="content_flow">
+                                <div class="content_title">
+                                    <h2>other projects</h2>
+                                    <p>Other work includes merchandise design, video planning/editing, and more.</p>
+                                </div>
+                                <div class="window_content">
+                                    <!-- MUXI -->
+                                    <div class="two_column_block">
+                                        <a class="project_listing" href="projects/muxi.html">
+                                            <div class="listing_left">
+                                                <h3>Merchandise</h3>
+                                            </div>
+                                            <div class="listing_right">
+                                                <img src="img/about/about-placeholder.svg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- VR3S -->
+                                    <div class="two_column_block">
+                                    <a class="project_listing">
+                                        <div class="listing_left">
+                                            <h3>Video Work</h3>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/about/about-placeholder.svg">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                 </div>
 
@@ -291,7 +389,6 @@
 
     <!-- JS -->
     <script src="js/main.js"></script>
-    <script src="js/projects.js"></script>
 </body>
 
 </html>

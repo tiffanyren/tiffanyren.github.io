@@ -12,13 +12,15 @@ body,
 html {
   height: 100% !important;
   background-color: transparent;
+  width: 100%;
 }
 
 /* https://stackoverflow.com/questions/59524026/content-shifts-slightly-on-page-reload-with-chrome */
 
 .background-wrapper {
 
-  background-image: url('../img/digital-art-style-sky-landscape-with-moon.jpg');
+  background-image: url('../img/background/digital-art-style-sky-landscape-with-moon 2.jpg');
+  background-color: rgb(51, 60, 93);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -42,20 +44,6 @@ html {
   margin-right: 10%;
   gap: 3em;
 }
-
-/* .parallax {
-  background-color: black;
-  height: 100%;
-  Create the parallax scrolling effect
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-} 
-*/
-
-/* .parallax_first{
-  background-position-y: -200px;
-} */
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
@@ -82,19 +70,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* Image Header */
-
-.headerimg img {
-  width: 100%;
-  height: auto;
-}
-
-.headerimg h1 {
-  margin-top: 1rem;
-}
-
-
 
 /* 
     TEXT ELEMENTS -------------------
@@ -194,41 +169,11 @@ nav {
   text-decoration: none;
   color: white;
   background-color: rgba(76, 105, 168, 0.5);
-  outline: 2px solid rgb(151, 167, 201);
+  /* outline: 2px solid rgb(151, 167, 201); */
   border-radius: 8px;
   transition: background-color 0.5s ease;
-  transition: outline 0.1s ease;
+  ;
 }
-
-
-/* .nav_left nav a {
-  font-size: 2.4rem;
-  display: block;
-  text-transform: lowercase;
-  color: white;
-  margin-top: auto;
-  margin-bottom: auto;
-
-}
-
-.nav_right nav {
-  justify-content: space-around;
-}
-
-.nav_right nav a {
-  font-size: 1.8rem;
-  display: inline-block;
-  transition: all 0.5s ease;
-  text-transform: lowercase;
-  color: rgba(255, 255, 255, 0.8);
-  padding-right:0.5em;
-}
-
-.nav_right nav a:active,
-.nav_right nav a:hover,
-.nav_right nav a:focus {
-  color: white;
-} */
 
 /* 
 HEADER BAR -------------------

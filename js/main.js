@@ -34,19 +34,6 @@ function typeEffect(element, speed) {
 }
 
 
-window.addEventListener('scroll', function () {
-    // Get scroll percentage
-    var scrollTop = window.scrollY;
-    var docHeight = document.body.scrollHeight - window.innerHeight;
-    var scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
-
-    // Move background by percentage (adjust multiplier for effect strength)
-    var yPos = scrollPercent * 1000; // 300px max movement, adjust as needed
-    document.body.style.backgroundPosition = 'center ' + yPos + 'px';
-});
-
-
-
 $(document).ready(function () {
     var speed = 100;
     var delay = $('.container_buttons .big').text().length * speed + speed;
@@ -73,4 +60,15 @@ document.querySelectorAll('.container_buttons').forEach(function (btn) {
     btn.addEventListener('mouseleave', function () {
         document.querySelector('.container_starryeffect').style.opacity = '0';
     });
+});
+
+window.addEventListener('scroll', function () {
+    // Get scroll percentage
+    var scrollTop = window.scrollY;
+    var docHeight = document.body.scrollHeight - window.innerHeight;
+    var scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+
+    // Move background by percentage (adjust multiplier for effect strength)
+    var yPos = scrollPercent * 1000; // 300px max movement, adjust as needed
+    document.body.style.backgroundPosition = 'center ' + yPos + 'px';
 });
