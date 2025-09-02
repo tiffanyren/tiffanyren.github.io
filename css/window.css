@@ -8,6 +8,12 @@
     padding-top: 11em;
 }
 
+/* BOTTOM-MOST SECTION */
+#otherprojects,
+#projectpage { 
+    padding-bottom: 11em;
+}
+
 .window_right {
     display: flex;
     flex-direction: column;
@@ -193,7 +199,7 @@
     justify-content: space-between;
     gap: 1em;
     min-width: 120px;
-    flex-basis: 100%;
+    flex-basis: 92%;
     background-color: rgb(255, 249, 253);
     padding: 2em;
     border-radius: 12px;
@@ -239,7 +245,7 @@
 }
 
 .listing_right img {
-    background-color: grey;
+    background-color: rgb(243, 210, 226);
     border-radius: 12px;
     object-fit:cover; 
     height:160px; 
@@ -256,18 +262,23 @@
     outline: 1px solid black;
     margin-right:20%;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+    
+}
+
+.other_projects .window_content {
+    align-items:center;
 }
 
 .two_column_block {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    flex-basis: 30%;
+    flex-basis: 47%;
     min-width: 120px;
 }
 
 .two_column_block img {
-    max-width: 450px;
+    max-width: 100%;
 }
 
 
