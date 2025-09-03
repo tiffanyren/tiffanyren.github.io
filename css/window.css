@@ -281,7 +281,6 @@
 .two_column_block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-basis: 48%;
     min-width: 120px;
     align-items: center;
