@@ -19,9 +19,9 @@
 /* Tablet (portrait & landscape) */
 @media (max-width: 1280px) {
 
-    body {
+    /* body {
         color: red;
-    }
+    } */
 
     .container_nav {
         width: 90%;
@@ -67,9 +67,9 @@
 /* Tablet (portrait & landscape) */
 @media (max-width: 960px) {
 
-    body {
+    /* body {
         color: green;
-    }
+    } */
 
     .container_nav {
         width: 90%;
@@ -114,9 +114,9 @@
 
 /* iPhone & small mobile devices */
 @media (max-width: 600px) {
-    body {
+    /* body {
         color: blue;
-    }
+    } */
 
     #a_about, #a_work, #a_other, #a_hobbies {
         display:none;
