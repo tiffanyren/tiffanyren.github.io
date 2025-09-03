@@ -272,9 +272,10 @@
 .two_column_block {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    flex-basis: 47%;
+    gap: 0.5em;
+    flex-basis: 48%;
     min-width: 120px;
+    align-items:center;
 }
 
 .two_column_block img {
