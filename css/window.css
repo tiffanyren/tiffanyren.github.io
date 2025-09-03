@@ -158,8 +158,6 @@
 .other_content a:focus,
 .other_content a:active {
     text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(245, 197, 217);
 
 }
 
