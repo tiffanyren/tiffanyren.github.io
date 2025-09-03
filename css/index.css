@@ -38,7 +38,7 @@ IMG & BUTTON -------------------
     align-items: center;
     text-decoration: none;
     transition: all 0.5s ease;
-    color: rgb(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255, 1);
     background-color: transparent;
 }
 
@@ -46,7 +46,6 @@ IMG & BUTTON -------------------
 .container_buttons a:focus,
 .container_buttons a:active {
     text-decoration: none;
-    color: white;
 }
 
 .container_starryeffect {
@@ -61,7 +60,7 @@ IMG & BUTTON -------------------
 }
 
 .container_starryeffect img {
-    width: 25em;
+    width: 30em;
     height:auto;
 }
 
