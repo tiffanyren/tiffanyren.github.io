@@ -4,12 +4,13 @@
 #aboutme,
 #work,
 #otherprojects,
+#hobbies,
 #projectpage {
     padding-top: 11em;
 }
 
 /* BOTTOM-MOST SECTION */
-#otherprojects,
+#hobbies,
 #projectpage { 
     padding-bottom: 11em;
 }
@@ -27,6 +28,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 1em;
+    padding-bottom:3em;
 }
 
 .content_title {
@@ -282,6 +284,23 @@
     max-width: 100%;
 }
 
+
+/* Hobbies */
+
+.hobbies {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    margin-left:20%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+    
+}
+
+.hobbies .window_content {
+    align-items:center;
+}
 
 /* Windows Header Bar */
 
