@@ -1,0 +1,423 @@
+/* General */
+
+#profile,
+#aboutme,
+#work,
+#otherprojects,
+#hobbies,
+#projectpage {
+    padding-top: 11em;
+}
+
+/* BOTTOM-MOST SECTION */
+#hobbies,
+#projectpage {
+    padding-bottom: 11em;
+}
+
+.window_right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    gap: 2em;
+}
+
+.content_flow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+
+.content_title {
+    text-align: center;
+    padding: 2em 2em 0em 2em;
+}
+
+.content_title p {
+    max-width: 600px;
+    min-width: 120px;
+}
+
+.content_title h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    /* font-size: 2.4em; */
+    margin: 0em 0em 0em;
+    padding: 0em 0em 0.5em 0em;
+    color: black;
+}
+
+.window_content {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* profile */
+
+.window_left {
+    display: flex;
+    flex-direction: column;
+    flex-basis:15%;
+
+}
+
+
+.window_left .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 11em;
+}
+
+.sticky .sticky_window {
+    background-color: white;
+    padding: 0em;
+    border-radius: 12px;
+    outline: 1px solid black;
+    flex-basis: 20%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+    margin-bottom: 2em;
+}
+
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1.5em;
+}
+
+.profile_circle_inner {
+    height: 128px;
+    width: 128px;
+    background-image: url('../img/profile/bunny-profile-gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile_circle {
+    height: 148px;
+    width: 148px;
+    background-color: rgb(255, 228, 247);
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.window_left .sticky h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    /* font-size: 1.7em; */
+    margin: 0em 0em 0em;
+    padding: 0em 0em 0.1em 0em;
+    color: black;
+    text-align: center;
+}
+
+.window_left .sticky p {
+    padding: 0.5em 0em 0em 0em;
+    margin: 0em 0em 1em 0em;
+    padding: 0em 0em 0em;
+    color: black;
+    text-align: center;
+}
+
+/* Other links */
+
+.other_content {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.other_content a {
+    color: black;
+}
+
+.other_content a:hover,
+.other_content a:focus,
+.other_content a:active {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(245, 197, 217);
+
+}
+
+
+/* About me */
+
+.aboutme {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    width: auto;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+}
+
+.three_column_block {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-basis: 25%;
+    min-width: 200px;
+}
+
+.three_column_block img {
+    max-width: 300px;
+}
+
+/* work */
+
+.work {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    width: auto;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+    margin-left: 10%
+}
+
+.project_listing {
+    display: flex;
+    color: black;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    gap: 1em;
+    min-width: 120px;
+    flex-basis: 92%;
+    background-color: rgb(255, 249, 253);
+    padding: 2em;
+    border-radius: 12px;
+    outline: 1px solid rgb(216, 172, 203);
+}
+
+.project_listing:hover,
+.project_listing:focus,
+.project_listing:active {
+    text-decoration: none;
+    background-color: rgb(255, 238, 250);
+    cursor: pointer;
+    color: black;
+    outline: 1px solid rgb(212, 162, 197);
+}
+
+.project_tags {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    row-gap: 0em;
+    margin-bottom: 1em;
+}
+
+.project_tag {
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 0.5em;
+    /* outline: 1px solid black; */
+}
+
+.listing_left {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    flex-basis: 60%;
+}
+
+.listing_right img {
+    background-color: rgb(243, 210, 226);
+    border-radius: 12px;
+    object-fit: cover;
+    height: 160px;
+    width: 240px;
+    flex-basis:40%;
+}
+
+/* Other projects */
+
+.other_projects {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    margin-right: 20%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+
+}
+
+.other_projects .window_content {
+    align-items: center;
+}
+
+.two_column_block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex-basis: 48%;
+    min-width: 120px;
+    align-items: center;
+}
+
+.two_column_block img {
+    max-width: 100%;
+}
+
+
+/* Hobbies */
+
+.hobbies {
+    background-color: white;
+    padding: 0em;
+    height: fit-content;
+    border-radius: 12px;
+    outline: 1px solid black;
+    margin-left: 20%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
+
+}
+
+.hobbies .window_content {
+    align-items: center;
+}
+
+/* Windows Header Bar */
+
+.window_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.3em 1em;
+    background-color: rgb(240, 228, 255);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid grey;
+}
+
+.window_bar .window_title {
+    /* font-size: 1.7rem; */
+    margin: 0em 0em 0em;
+    padding: 0.3em 0em;
+    color: black;
+    align-items: end;
+    display: inline;
+}
+
+.window_bar .window_buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+}
+
+.action_bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(235, 235, 235);
+    border-bottom: 1px solid grey;
+    gap: 1.1em;
+    padding: 0em 1em;
+}
+
+.action_bar h4 {
+    /* font-size: 1.5rem; */
+    font-size: 0.9em;
+    margin: 0.4em 0em;
+    color: black;
+    align-items: center;
+    display: inline;
+}
+
+.paint_toolbar {
+    display: block;
+    height: auto;
+    background-color: rgb(235, 235, 235);
+    padding: 0.5em;
+    border-right: 1px solid black;
+    border-bottom-left-radius: 12px;
+}
+
+.paint_toolbar .toolbar_colours {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: min-content;
+    gap: 4px;
+    width: 28px;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    background-color: grey;
+    outline: 1px solid black;
+    border-width: 1px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.paint_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0em;
+    padding: 0em;
+    margin: 0em;
+}
+
+/* Window Buttons */
+
+.circle {
+    height: 12px;
+    width: 12px;
+    background-color: grey;
+    outline: 1px solid black;
+    border-width: 1px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.c1 {
+    background-color: rgb(244, 196, 205);
+}
+
+.c2 {
+    background-color: rgb(254, 246, 196);
+}
+
+.c3 {
+    background-color: rgb(220, 244, 205);
+}

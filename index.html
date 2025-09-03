@@ -14,8 +14,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/projectscroll.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/window.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,114 +25,424 @@
 
 </head>
 
-<body>
+<body class="background-wrapper" id="top">
     <!-- NAVIGATION -->
     <section class="container_nav">
-        <div class="nav_left">
-            <a href="index.html"><img class="img_logo" src="img/thin-white-logo.png" alt="tiffany ren logo"></a>
-        </div>
-        <div class="nav_right">
-            <nav>
-                <a href="index.html#bio">Biography</a>
-                <a href="index.html#projects">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+        <a class="nav_icon_button" href="index.html#top" id="a_home">
+            <img class="img_logo" src="img/nav/icon-home.svg" alt="home icon">
+            <span>
+                <h4>tiff's home</h4>
+            </span>
+        </a>
+        <a class="nav_icon_button" href="index.html#aboutme"id="a_about">
+            <img class="img_logo" src="img/nav/icon-about.svg" alt="about icon">
+            <span>
+                <h4>about me</h4>
+            </span>
+        </a>
+        <a class="nav_icon_button" href="index.html#work" id="a_work">
+            <img class="img_logo" src="img/nav/icon-projects.svg" alt="design work icon">
+            <span>
+                <h4>design work</h4>
+            </span>
+        </a>
+        <a class="nav_icon_button" href="index.html#otherprojects" id="a_other">
+            <img class="img_logo" src="img/nav/icon-explore.svg" alt="other projects icon">
+            <span>
+                <h4>other projects</h4>
+            </span>
+        </a>
+        <a class="nav_icon_button" href="index.html#hobbies" id="a_hobbies">
+            <img class="img_logo" src="img/nav/icon-hobby.svg" alt="hobbies icon">
+            <span>
+                <h4>hobbies</h4>
+            </span>
+        </a>
     </section>
 
     <section class="container_index">
         <!-- TOP SECTION -->
         <div class="container_home">
-            <div class="parallax" style="background-image: url('img/dino-reichmuth-98982.jpg')"></div>
+            <!-- <div class="parallax parallax_first" style="background-image: url('img/digital-art-style-sky-landscape-with-moon.jpg')"></div> -->
+            <div class="container_starryeffect"><img src="img/home/starry-effect.png" alt="starry effect"></div>
+            <div class="container_cloud1"><img src="img/home/cloud-rhs-smaller.png" alt="cloud decoration"></div>
+            <div class="container_cloud2"><img src="img/home/Clouds_03.png" alt="cloud decoration"></div>
+            <div class="container_cloud3"><img src="img/home/cloud-png-top-view.png" alt="cloud decoration"></div>
             <div class="container_buttons" id="tagline">
-                <a class="button_nav button_trans" href="#bio">Seeing a world beyond reality.</a>
-            </div>
-            <div class="container_cloud1"><img src="img/cloud-rhs-smaller.png"></div>
-            <div class="container_cloud2"><img src="img/Clouds_03.png"></div>
-            <div class="container_cloud3"><img src="img/cloud-png-top-view.png"></div>
-        </div>
-
-        <!-- BIOGRAPHY -->
-        <div class="container_bio" id="bio">
-            <div class="block">
-                <h1>hi, my name is tiffany.</h1>
-                <p>I am a business and design technology student pursuing a career in marketing,
-                    interactive design and project management. I also do some front end development, including this
-                    site!</p>
-            </div>
-            <div class="block2">
-                <h3>PRODUCT MARKETING STRATEGY</h3>
-                <p>Analyzing performance, competition, target markets to diversify product offerings, leading a team to
-                    generate over $25,000 in 2019</p>
-                <p></p>
-                <h3>PROJECT MANAGEMENT</h3>
-                <p>Managing large-scale projects in a University setting, such as overnight events for 400+ students and
-                    marketing projects catering to 3,800 undergraduate students</p>
-                <p></p>
-                <h3>CORPORATE SERVICING & CONSULTING</h3>
-                <p>Consulting corporate customers on HR processing, bringing in international employees for companies,
-                    and servicing employees’ experience and visa work permits</p>
-                <p></p>
-                <h3>HUMAN RESOURCE MANAGEMENT</h3>
-                <p>Leading 40 individuals and coaching for personal, operational, and organizational development, while
-                    managing portfolios in finance, B2B and B2C sales</p>
+                <a href="#profile">
+                    <h1>dreaming in a</h1>
+                    <h1 class="big">(digital) reality</h1>
+                    <h1>↓</h1>
+                </a>
             </div>
         </div>
 
-        <div class="parallax" style="background-image: url('img/Work\ Sample\ -\ Magazine\ Spreads.png')"></div>
-
-        <!-- PROJECTS/WORKS -->
-        <section id="projects">
-            <div class="proj_title">
-                <h1>works</h1>
-            </div>
-            <div class="container_listing">
-                <div class="container_imgs">
-                    <div class="block">
-                        <a href="illustrator.html"><img src="img/Work Sample - Merchandise Design.png" alt="merchandise design"></a>
-                    </div>
-                    <div class="block">
-                        <a href="photoshop.html"><img src="img/head-in-clouds.png" alt="edit project 1"></a>
-                    </div>
-                    <div class="block">
-                        <a href="indesign.html"><img src="img/Work Sample - Magazine Spreads.png" alt="magazine spreads"></a>
-                    </div>
-                    <div class="block">
-                        <a href="webdevelopment.html"><img src="img/Work Sample - Web.png" alt="edit project 2"></a>
-                    </div>
-                </div>
-                <div class="container_desc">
+        <!-- WORKS -->
+        <section>
+            <div class="container_content">
+                <!-- PROFILE ON LEFT -->
+                <div class="window_left" id="profile">
                     <div class="sticky">
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="illustrator.html">Illustrator Projects</a>
+                        <div class="sticky_window">
+                            <div class="window_bar">
+                                <h4 class="window_title">me.exe</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="profile_content">
+                                <div class="profile_circle">
+                                    <div class="profile_circle_inner"></div>
+                                </div>
+                                <h3>tiffany ren</h3>
+                                <p>ux & product design</p>
+                                <img src="img/profile/playbuttons.svg" alt="media buttons" style="width:60%">
+                            </div>
                         </div>
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="premierepro.html">Premiere Pro Projects</a>
-                        </div>
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="webdevelopment.html">Web Development</a>
-                        </div>
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="indesign.html">InDesign Projects</a>
-                        </div>
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="photoshop.html">Photoshop Projects</a>
-                        </div>
-                        <div class="block2">
-                            <a class="button_nav2 button_trans2" href="uxdesign.html">UX Projects</a>
+                        <!-- other links -->
+                        <div class="sticky_window">
+                            <div class="window_bar" style="background-color: rgb(255, 249, 220);">
+                                <h4 class="window_title">links.txt</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="other_content">
+                                <a href="https://www.linkedin.com/in/tiffanyren/" target="_blank">
+                                    <h4>linkedin ↗</h4>
+                                </a>
+                                <a href="https://github.com/tiffanyren/tiffanyren.github.io" target="_blank">
+                                    <h4>github (this site) ↗</h4>
+                                </a>
+                                <a href="https://www.instagram.com/ae.stopia/" target="_blank">
+                                    <h4>art instagram ↗</h4>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="window_right">
+
+                    <!-- ABOUT ME -->
+                    <section id="aboutme">
+                        <div class="aboutme">
+                            <div class="window_bar" style="background-color: rgb(255, 228, 247);">
+                                <h4 class="window_title">about-me.jpeg</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="action_bar">
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
+                            </div>
+                            <div class="paint_content">
+                                <div class="paint_toolbar">
+                                    <div class="toolbar_colours">
+                                        <span class="square" style="background-color:lightgoldenrodyellow;"></span>
+                                        <span class="square" style="background-color:lightblue;"></span>
+                                        <span class="square" style="background-color:lightpink;"></span>
+                                        <span class="square" style="background-color:rgb(160, 247, 179);"></span>
+                                        <span class="square" style="background-color:plum;"></span>
+                                        <span class="square" style="background-color:rgb(190, 241, 219);"></span>
+                                        <span class="square" style="background-color:bisque;"></span>
+                                        <span class="square" style="background-color:lightgoldenrodyellow;"></span>
+                                        <span class="square" style="background-color:lightblue"></span>
+                                        <span class="square" style="background-color:bisque;"></span>
+                                        <span class="square" style="background-color:lightsteelblue;"></span>
+                                        <span class="square" style="background-color:lightpink;"></span>
+                                    </div>
+                                </div>
+                                <div class="content_flow">
+                                    <div class="content_title">
+                                        <h2>about me</h2>
+                                    </div>
+                                    <div class="window_content">
+                                        <div class="three_column_block">
+                                            <img src="img/about/about-vr.svg" alt="cat with VR glasses saying wow">
+                                            <p><span style="font-weight:600">I bring dreams to reality--</span> whether
+                                                it
+                                                be
+                                                through virtual reality, augmented reality, 3D digital twins,
+                                                AI-assisted
+                                                experiences--deployed on VR/AR devices, mobile, desktop and web.</p>
+                                        </div>
+                                        <div class="three_column_block">
+                                            <img src="img/about/about-problems.svg" alt="bear thinking out loud">
+                                            <p>I’ve solved <span style="font-weight:600">unique problems</span> for
+                                                digital
+                                                products, healthcare providers, entertainment & toys, and automotive
+                                                companies,
+                                                with audiences spanning <span style="font-weight:600">young children to
+                                                    skilled
+                                                    workforces.</span></p>
+                                        </div>
+                                        <div class="three_column_block">
+                                            <img src="img/about/about-mouse.svg"
+                                                alt="dog with laptop and mouse-shaped mouse">
+                                            <p>I’ve designed full-time at <span style="font-weight:600"> Unity,
+                                                    Capgemini,
+                                                    TTT
+                                                    Studios, </span> with past marketing and program management
+                                                internships
+                                                at
+                                                <span style="font-weight:600">SAP</span> and <span
+                                                    style="font-weight:600">Unity.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WORK -->
+                    <section id="work">
+                        <div class="work">
+                            <div class="window_bar" style="background-color: rgb(228, 240, 255);">
+                                <h4 class="window_title">design-work.exe</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="action_bar">
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
+                            </div>
+                            <div class="content_flow">
+                                <div class="content_title">
+                                    <h2>design work</h2>
+                                    <p>Clients I’ve designed for include LEGO, Nissan, Cincinnati Children’s Hospital,
+                                        alongside other internal projects at Unity, Capgemini, and TTT Studios. Please
+                                        reach out for projects not available publicly!</p>
+                                </div>
+                                <div class="window_content">
+                                    <!-- VR3S -->
+                                    <a class="project_listing" href="projects/vr3s.html">
+                                        <div class="listing_left">
+                                            <h3>VR3S: VR Surgical Simulation Suite</h3>
+                                            <div class="project_tags">
+                                                <span class="project_tag"
+                                                    style="background-color:rgb(219, 173, 230);">virtual
+                                                    reality</span>
+                                                <span class="project_tag"
+                                                    style="background-color:lightpink;">multiplayer environment</span>
+                                                <span class="project_tag"
+                                                    style="background-color:bisque;">healthcare</span>
+                                            </div>
+                                            <p>Simulating surgeries for infant heart defects in a multiplayer VR
+                                                environment.</p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/projects/vr3s/Surgeons-Without-Borders.jpg"
+                                                alt="VR3S cover image with user wearing VR device">
+                                        </div>
+                                    </a>
+                                    <!-- MUXI -->
+                                    <a class="project_listing" href="projects/muxi.html">
+                                        <div class="listing_left">
+                                            <h3>Muxi: AI-Guided Product Planning</h3>
+                                            <div class="project_tags">
+                                                <span class="project_tag" style="background-color:lightblue;">artificial
+                                                    intelligence</span>
+                                                <span class="project_tag" style="background-color:lightpink;">product
+                                                    leadership</span>
+                                            </div>
+                                            <p>A product planning tool to quickly scope out ideas and create prompts for
+                                                other AI builders.</p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/projects/muxi/Cover2.jpg"
+                                                alt="muxi project cover image with muxi screen">
+                                        </div>
+                                    </a>
+                                    <!-- LEGO -->
+                                    <a class="project_listing" href="projects/lego.html">
+                                        <div class="listing_left">
+                                            <h3>LEGO: Mars Perseverance Rover AR</h3>
+                                            <div class="project_tags">
+                                                <span class="project_tag" style="background-color:lightblue;">augmented
+                                                    reality</span>
+                                                <span class="project_tag" style="background-color:lightpink;">games &
+                                                    education</span>
+                                            </div>
+                                            <p>A LEGO® Technic™ AR+ experience for the Mars Perseverance Rover. </p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/projects/lego/lego-cover.png"
+                                                alt="lego project cover with young girl using AR application on lego">
+                                        </div>
+                                    </a>
+
+                                    <!-- AI Conversational Digital Twin -->
+                                    <!-- <a class="project_listing">
+                                        <div class="listing_left">
+                                            <h2>AI Conversational Digital Twin</h2>
+                                            <div class="project_tags">
+                                                <span class="project_tag" style="background-color:lightblue;">artificial
+                                                    intelligence</span>
+                                                <span class="project_tag" style="background-color:lightpink;">digital
+                                                    twin</span>
+                                            </div>
+                                            <p>I’ve solved <span style="font-weight:600">unique problems</span> for
+                                                digital
+                                                products, healthcare providers, entertainment & toys, and automotive
+                                                companies,
+                                                with audiences spanning <span style="font-weight:600">young children to
+                                                    skilled
+                                                    workforces.</span></p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/about/about-placeholder.svg" alt="AI conversational digital twin screen">
+                                        </div>
+                                    </a> -->
+
+                                    <!-- Other UI Artifacts -->
+                                    <a class="project_listing">
+                                        <div class="listing_left">
+                                            <h3>UI Artifacts</h3>
+                                            <div class="project_tags">
+                                                <span class="project_tag" style="background-color:lightblue;">mixed
+                                                    reality</span>
+                                                <span class="project_tag" style="background-color:lightpink;">digital
+                                                    twins</span>
+                                            </div>
+                                            <p>UI artifacts from other professional design projects.</p>
+                                        </div>
+                                        <div class="listing_right">
+                                            <img src="img/about/about-placeholder.svg">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!-- OTHER PROJECTS -->
+                    <section id="otherprojects">
+                        <div class="other_projects">
+                            <div class="window_bar" style="background-color: rgb(228, 255, 249);">
+                                <h4 class="window_title">other-projects.exe</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="action_bar">
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
+                            </div>
+                            <div class="content_flow">
+                                <div class="content_title" style="margin-bottom:3em;">
+                                    <h2>other projects</h2>
+                                    <!-- <p>Other work includes merchandise design, video planning/editing, and more.</p> -->
+                                    <p>This section is WIP! It should be ready by mid-September.</p>
+                                </div>
+                                <!-- <div class="window_content">
+
+                                    <div class="two_column_block">
+                                        <a class="project_listing" href="projects/muxi.html">
+                                            <div class="listing_left">
+                                                <h3>Merchandise</h3>
+                                            </div>
+                                            <div class="listing_right">
+                                                <img src="img/about/about-placeholder.svg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="two_column_block">
+                                        <a class="project_listing">
+                                            <div class="listing_left">
+                                                <h3>Video Work</h3>
+                                            </div>
+                                            <div class="listing_right">
+                                                <img src="img/about/about-placeholder.svg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                    </section>
+
+                    <!-- HOBBIES -->
+                    <section id="hobbies">
+                        <div class="hobbies">
+                            <div class="window_bar" style="background-color: rgb(255, 228, 247);">
+                                <h4 class="window_title">hobbies.exe</h4>
+                                <div class="window_buttons">
+                                    <span class="circle c1"></span>
+                                    <span class="circle c2"></span>
+                                    <span class="circle c3"></span>
+                                </div>
+                            </div>
+                            <div class="action_bar">
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
+                            </div>
+                            <div class="content_flow">
+                                <div class="content_title" style="margin-bottom:3em;">
+                                    <h2>hobbies</h2>
+                                    <!-- <p>Other work includes merchandise design, video planning/editing, and more.</p> -->
+                                    <p>This section is WIP! It should be ready by mid-September.</p>
+                                </div>
+                                <!-- <div class="window_content">
+
+                                    <div class="two_column_block">
+                                        <a class="project_listing" href="projects/muxi.html">
+                                            <div class="listing_left">
+                                                <h3>Merchandise</h3>
+                                            </div>
+                                            <div class="listing_right">
+                                                <img src="img/about/about-placeholder.svg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="two_column_block">
+                                        <a class="project_listing">
+                                            <div class="listing_left">
+                                                <h3>Video Work</h3>
+                                            </div>
+                                            <div class="listing_right">
+                                                <img src="img/about/about-placeholder.svg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                    </section>
+
+
+                </div>
+
             </div>
         </section>
-
-        <!-- <footer>
-        <p>Created by Tiffany Ren. Style Guide <a href="styleguide.html"> here.</a></p>
-    </footer> -->
-
-        <!-- JS -->
-        <script src="js/main.js"></script>
-        <script src="js/projects.js"></script>
+    </section>
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

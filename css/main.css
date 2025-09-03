@@ -1,106 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
-@import url("https://use.typekit.net/qec4opu.css");
+@import url('https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Pixelify+Sans:300,300i,400,400i,600,600i');
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-body, html {
-  height: 100%;
-}
-
-.container_home {
-  height: 100%;
-  max-width: 100%;
-}
-
-.parallax {
-  background-color: black;
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+body,
+html {
+  height: 100% !important;
+  background-color: transparent;
+  width: 100%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0;
   margin: 0;
-  color: #292830;
-  /* main text color ^^ */
+  color: black;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-video {
-  width: 100%;
-  height: auto;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Image Header */
-
-.headerimg img {
-  width: 100%;
-  height: auto;
-}
-
-.headerimg h1 {
-  margin-top: 1rem;
-}
 
 /* 
     TEXT ELEMENTS -------------------
   */
 
 h1 {
-  font-family: garamond-premier-pro, serif;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 4.2rem;
   font-weight: 400;
+  text-align:center;
+  color: white;
   /* text-align: center; */
 }
 
 h2 {
-  font-family: garamond-premier-pro, serif;
   margin-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   font-weight: 400;
   /* text-align: center; */
 }
 
 h3 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   /* text-align: center; */
 }
 
 h4 {
   font-weight: normal;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.6rem;
   font-weight: 400;
   /* font-style: italic;
     text-align: center; */
 }
 
 p {
-  padding: 0.5em 0em;
+  /* padding: 0.5em 0em; */
   font-weight: normal;
   /* text-align: center; */
 }
@@ -121,101 +84,158 @@ label {
 }
 
 /* 
-LOGO -------------------
-*/
-
-.img_logo {
-  max-height: 3em;
-  width: auto;
-}
-
-/* 
-NAVIGATION BAR -------------------
+NAVIGATION -------------------
 */
 
 nav {
-  font-size: 1em;
   display: flex;
-  margin-bottom: 0.5em;
   z-index: 1;
-  overflow: hidden;
 }
 
-.nav_right nav {
-  justify-content: space-around;
+.nav_icon_button img {
+  height: 60px;
+  width: 60px;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0rem;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  text-transform: uppercase;
-  color: white;
+.nav_icon_button h4 {
+  margin: 0.3em 0em 0em 0em;
+  padding: 0.4em;
+  background-color: rgba(76, 105, 168, 0.5);
+  border-radius: 8px;
+}
+
+.nav_icon_button {
   background-color: transparent;
-  border: 0.08em solid transparent;
+  margin: 0;
+  padding: 0.2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a:active, nav a:hover, nav a:focus {
-  border-bottom: 0.05em solid whitesmoke;
+.nav_icon_button:hover,
+.nav_icon_button:focus,
+.nav_icon_button:active {
+  text-decoration: none;
   color: white;
+  background-color: rgba(76, 105, 168, 0.5);
+  /* outline: 2px solid rgb(151, 167, 201); */
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+  ;
 }
 
 /* 
 HEADER BAR -------------------
 */
 
+.sandwich_container {
+  flex-direction:row;
+}
+
+#sandwich {
+  display:none;
+}
+
 .container_nav {
-  position: sticky;
-  position: -webkit-sticky;
-  width: 100%;
-  top: 0;
+  position: fixed;
+  width: 80%;
+  top: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  padding-left: 3.5em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: black;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255, 0.08);
+  outline: 1px solid rgba(255, 255, 255, 0.4);
   z-index: 1;
+  transition: background-color 0.5s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  /* Adjust blur strength as needed */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari compatibility */
+}
+
+.container_nav .scrolled {
+  background-color: rgba(223, 157, 185, 1);
   transition: none;
 }
 
-.nav_left {
+/* .nav_left {
   flex-basis: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .nav_right {
-  margin-top: auto;
   flex-basis: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
+
+/* https://stackoverflow.com/questions/59524026/content-shifts-slightly-on-page-reload-with-chrome */
+
+.background-wrapper {
+
+  background-image: url('../img/background/digital-art-style-sky-landscape-with-moon 2.jpg');
+  background-color: rgb(51, 60, 93);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  width: 100%;
+  min-height: 100vh;
 }
 
-a h1 {
+.container_home {
+  height: 100%;
+  max-width: 100%;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 3em;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+nav a:hover,
+nav a:focus {
   text-decoration: none;
-  text-align: left;
-  display: inline-block;
-  color: #292830;
 }
 
-nav a {
-  margin-right: 0.5em;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-p a {
-  color: white;
-  text-decoration: underline;
-}
-
-p a:hover, p a:focus, p a:active {
-  color: lightgrey;
-}
 
 /* 
 FOOTER -------------------
 */
 
-footer {
+/* footer {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -231,4 +251,4 @@ footer {
 
 footer p {
   font-family: garamond-premier-pro, serif;
-}
+} */
