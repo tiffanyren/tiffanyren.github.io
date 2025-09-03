@@ -27,39 +27,42 @@ IMG & BUTTON -------------------
     max-width: 100%;
 }
 
-.container_buttons a{
+.container_buttons {
+    top:60%;
+    left:50%;
+}
+
+.container_buttons a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    margin-bottom:1em;
     transition: all 0.5s ease;
     color: rgb(255, 255, 255, 0.8);
     background-color: transparent;
 }
 
 .container_buttons a:hover,
-.container_buttons a:focus, 
+.container_buttons a:focus,
 .container_buttons a:active {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .container_starryeffect {
     align-items: center;
     justify-content: center;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top:2em;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 .container_starryeffect img {
-    width: 30%;
-    height: auto;
+    width: 25em;
+    height:auto;
 }
 
 
@@ -112,10 +115,6 @@ RESPONSIVENESS -------------------
 
 @media (min-width: 90em) {
 
-    .container_home .container_buttons {
-        top: 60%;
-        left: 50%;
-    }
 
     .container_proj2 {
         flex-basis: 25%;
@@ -140,14 +139,8 @@ RESPONSIVENESS -------------------
 
 @media (min-width: 60em) {
 
-    .container_home .container_buttons {
-        top: 60%;
-        left: 50%;
-    }
 
-    .container_proj2 {
-        flex-basis: 25%;
-    }
+
 
     .container_cloud1 {
         top: 34%;
@@ -167,19 +160,7 @@ RESPONSIVENESS -------------------
 }
 
 @media (min-width: 45em) and (max-width: 60em) {
-    .container_home .container_buttons {
-        top: 65%;
-        left: 50%;
-    }
 
-    .button_nav {
-        font-size: 3rem;
-        padding: 1.5rem;
-    }
-
-    .container_proj2 {
-        flex-basis: 25%;
-    }
 
     .container_cloud1,
     .container_cloud2,
@@ -190,19 +171,6 @@ RESPONSIVENESS -------------------
 }
 
 @media (min-width: 40em) and (max-width: 45em) {
-    .container_home .container_buttons {
-        top: 65%;
-        left: 50%;
-    }
-
-    .button_nav {
-        font-size: 3rem;
-        padding: 1.5rem;
-    }
-
-    .container_proj2 {
-        flex-basis: 25%;
-    }
 
     .container_cloud1,
     .container_cloud2,
@@ -217,19 +185,7 @@ RESPONSIVENESS -------------------
 }
 
 @media (min-width: 30em) and (max-width: 40em) {
-    .container_home .container_buttons {
-        top: 50%;
-        left: 50%;
-    }
 
-    .button_nav {
-        font-size: 2.6rem;
-        padding: 1rem;
-    }
-
-    .container_proj2 {
-        flex-basis: 50%;
-    }
 
     .container_cloud1,
     .container_cloud2,
@@ -240,22 +196,11 @@ RESPONSIVENESS -------------------
     .background-wrapper {
         background-size: 200%;
     }
+
 }
 
 @media (max-width: 30em) {
-    .container_home .container_buttons {
-        top: 50%;
-        left: 50%;
-    }
 
-    .button_nav {
-        font-size: 2rem;
-        padding: 1rem;
-    }
-
-    .container_proj2 {
-        flex-basis: 100%;
-    }
 
     .container_cloud1,
     .container_cloud2,

@@ -56,6 +56,8 @@ $(document).ready(function () {
 document.querySelectorAll('.container_buttons').forEach(function (btn) {
     btn.addEventListener('mouseenter', function () {
         document.querySelector('.container_starryeffect').style.opacity = '1';
+        
+
     });
     btn.addEventListener('mouseleave', function () {
         document.querySelector('.container_starryeffect').style.opacity = '0';
@@ -72,3 +74,4 @@ window.addEventListener('scroll', function () {
     var yPos = scrollPercent * 1000; // 300px max movement, adjust as needed
     document.body.style.backgroundPosition = 'center ' + yPos + 'px';
 });
+

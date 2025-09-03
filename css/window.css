@@ -11,14 +11,14 @@
 
 /* BOTTOM-MOST SECTION */
 #hobbies,
-#projectpage { 
+#projectpage {
     padding-bottom: 11em;
 }
 
 .window_right {
     display: flex;
     flex-direction: column;
-    flex-basis: 80%;
+    flex-basis: 75%;
     gap: 2em;
 }
 
@@ -28,7 +28,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 1em;
-    padding-bottom:3em;
+    padding-bottom: 2em;
 }
 
 .content_title {
@@ -43,7 +43,7 @@
 
 .content_title h2 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 2.4em;
+    /* font-size: 2.4em; */
     margin: 0em 0em 0em;
     padding: 0em 0em 0.5em 0em;
     color: black;
@@ -60,6 +60,14 @@
 
 /* profile */
 
+.window_left {
+    display: flex;
+    flex-direction: column;
+    flex-basis:15%;
+
+}
+
+
 .window_left .sticky {
     position: sticky;
     position: -webkit-sticky;
@@ -73,11 +81,14 @@
     outline: 1px solid black;
     flex-basis: 20%;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .profile_content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: auto;
     padding-bottom: 1.5em;
@@ -114,7 +125,7 @@
 
 .window_left .sticky h3 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.6em;
+    /* font-size: 1.7em; */
     margin: 0em 0em 0em;
     padding: 0em 0em 0.1em 0em;
     color: black;
@@ -131,27 +142,24 @@
 
 /* Other links */
 
-.window_left .sticky h4 {
-    font-size: 1.2em;
-    margin: 0em 0em 0em;
-    padding: 0.5em 0em 0.5em 0em;
-    color: black;
-    text-align: center;
-}
-
 .other_content {
     display: block;
     text-align: center;
     margin: auto;
-    padding: 1em 0em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.other_content a {
+    color: black;
 }
 
 .other_content a:hover,
 .other_content a:focus,
 .other_content a:active {
     text-decoration: underline;
-    text-decoration-style:wavy;
-    text-decoration-color:rgb(245, 197, 217);
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(245, 197, 217);
 
 }
 
@@ -173,7 +181,7 @@
     flex-direction: column;
     gap: 1em;
     flex-basis: 25%;
-    min-width: 120px;
+    min-width: 200px;
 }
 
 .three_column_block img {
@@ -190,7 +198,7 @@
     outline: 1px solid black;
     width: auto;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
-    margin-left:10%
+    margin-left: 10%
 }
 
 .project_listing {
@@ -230,7 +238,7 @@
 
 .project_tag {
     background-color: white;
-    padding: 0.4em;
+    padding: 0.3em;
     border-radius: 4px;
     font-size: 0.9em;
     font-weight: normal;
@@ -242,16 +250,17 @@
 .listing_left {
     display: flex;
     flex-direction: column;
-    min-width: 10px;
-    flex-basis:60%;
+    min-width: 100px;
+    flex-basis: 60%;
 }
 
 .listing_right img {
     background-color: rgb(243, 210, 226);
     border-radius: 12px;
-    object-fit:cover; 
-    height:160px; 
-    width:240px;
+    object-fit: cover;
+    height: 160px;
+    width: 240px;
+    flex-basis:40%;
 }
 
 /* Other projects */
@@ -262,13 +271,13 @@
     height: fit-content;
     border-radius: 12px;
     outline: 1px solid black;
-    margin-right:20%;
+    margin-right: 20%;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
-    
+
 }
 
 .other_projects .window_content {
-    align-items:center;
+    align-items: center;
 }
 
 .two_column_block {
@@ -277,7 +286,7 @@
     gap: 0.5em;
     flex-basis: 48%;
     min-width: 120px;
-    align-items:center;
+    align-items: center;
 }
 
 .two_column_block img {
@@ -293,13 +302,13 @@
     height: fit-content;
     border-radius: 12px;
     outline: 1px solid black;
-    margin-left:20%;
+    margin-left: 20%;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.16);
-    
+
 }
 
 .hobbies .window_content {
-    align-items:center;
+    align-items: center;
 }
 
 /* Windows Header Bar */
@@ -317,7 +326,7 @@
 }
 
 .window_bar .window_title {
-    font-size: 1.4rem;
+    /* font-size: 1.7rem; */
     margin: 0em 0em 0em;
     padding: 0.3em 0em;
     color: black;
@@ -337,16 +346,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0.3em 1em;
     background-color: rgb(235, 235, 235);
     border-bottom: 1px solid grey;
-    gap: 1em;
+    gap: 1.1em;
+    padding: 0em 1em;
 }
 
-.action_bar p {
-    font-size: 1.3rem;
-    margin: 0em 0em 0em;
-    padding: 0em 0em 0em;
+.action_bar h4 {
+    /* font-size: 1.5rem; */
+    font-size: 0.9em;
+    margin: 0.4em 0em;
     color: black;
     align-items: center;
     display: inline;

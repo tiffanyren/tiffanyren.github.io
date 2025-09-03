@@ -1,0 +1,195 @@
+/* NAV AND GENERAL SIZES. For clouds see index.css (needs to be updated)*/
+
+/* Tablet (portrait & landscape) */
+@media (max-width: 1550px) {
+
+
+    .project_listing {
+
+        flex-basis: 100%;
+    }
+
+    .listing_left {
+
+        flex-basis: 100%;
+    }
+}
+
+
+/* Tablet (portrait & landscape) */
+@media (max-width: 1280px) {
+
+    body {
+        color: red;
+    }
+
+    .container_nav {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .container_content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 0.5em;
+    }
+
+    .window_left {
+        flex-basis: 20%;
+        max-width: 100%;
+    }
+
+    .window_right {
+        flex-basis: 75%;
+        max-width: 100%; 
+    }
+
+    .project_listing {
+
+        flex-basis: 100%;
+    }
+
+    .listing_left {
+
+        flex-basis: 100%;
+    }
+
+    .work, .other_projects, .hobbies {
+        margin-left:0;
+        margin-right:0;
+    }
+
+
+}
+
+/* Tablet (portrait & landscape) */
+@media (max-width: 960px) {
+
+    body {
+        color: green;
+    }
+
+    .container_nav {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .container_content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 1em;
+    }
+
+    .window_left {
+        flex-basis: 25%;
+        max-width: 100%;
+    }
+
+    .window_right {
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+
+    .project_listing {
+
+        flex-basis: 100%;
+    }
+
+    .listing_left {
+
+        flex-basis: 100%;
+    }
+
+    .work, .other_projects, .hobbies {
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+
+
+/* iPhone & small mobile devices */
+@media (max-width: 600px) {
+    body {
+        color: blue;
+    }
+
+    #a_about, #a_work, #a_other, #a_hobbies {
+        display:none;
+    }
+
+    #sandwich {
+        display:block;
+    }
+
+    .container_nav {
+        flex-direction: column;
+        width:fit-content;
+        margin: 0;
+        padding: 0em;
+        top: 0em;
+        border-radius: 0;
+        border-bottom-right-radius: 12px;
+    }
+
+    .container_content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 1em;
+    }
+
+    .window_left {
+        flex-basis: 25%;
+        max-width: 100%;
+    }
+
+    .window_right {
+        flex-basis: 100%;
+        max-width: 100%; 
+    }
+
+    .window_content {
+        flex-direction: column;
+    }
+
+    .content_title p {
+        text-align: left;
+    }
+
+    .project_listing {
+
+        flex-basis: 100%;
+    }
+
+    .listing_left {
+
+        flex-basis: 100%;
+    }
+
+    .work, .other_projects, .hobbies {
+        margin-left:0;
+        margin-right:0;
+    }
+
+}
+
+/* iPhone SE/mini screens */
+@media (max-width: 375px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container_nav {
+        padding: 0.2em;
+    }
+
+    .window_bar,
+    .action_bar {
+        font-size: 0.9rem;
+    }
+}

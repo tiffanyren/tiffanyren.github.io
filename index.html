@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/window.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -27,31 +28,31 @@
 <body class="background-wrapper" id="top">
     <!-- NAVIGATION -->
     <section class="container_nav">
-        <a class="nav_icon_button" href="index.html#top">
+        <a class="nav_icon_button" href="index.html#top" id="a_home">
             <img class="img_logo" src="img/nav/icon-home.svg" alt="home icon">
             <span>
                 <h4>tiff's home</h4>
             </span>
         </a>
-        <a class="nav_icon_button" href="index.html#aboutme">
+        <a class="nav_icon_button" href="index.html#aboutme"id="a_about">
             <img class="img_logo" src="img/nav/icon-about.svg" alt="about icon">
             <span>
                 <h4>about me</h4>
             </span>
         </a>
-        <a class="nav_icon_button" href="index.html#work">
+        <a class="nav_icon_button" href="index.html#work" id="a_work">
             <img class="img_logo" src="img/nav/icon-projects.svg" alt="design work icon">
             <span>
                 <h4>design work</h4>
             </span>
         </a>
-        <a class="nav_icon_button" href="index.html#otherprojects">
+        <a class="nav_icon_button" href="index.html#otherprojects" id="a_other">
             <img class="img_logo" src="img/nav/icon-explore.svg" alt="other projects icon">
             <span>
                 <h4>other projects</h4>
             </span>
         </a>
-        <a class="nav_icon_button" href="index.html#hobbies">
+        <a class="nav_icon_button" href="index.html#hobbies" id="a_hobbies">
             <img class="img_logo" src="img/nav/icon-hobby.svg" alt="hobbies icon">
             <span>
                 <h4>hobbies</h4>
@@ -68,7 +69,7 @@
             <div class="container_cloud2"><img src="img/home/Clouds_03.png" alt="cloud decoration"></div>
             <div class="container_cloud3"><img src="img/home/cloud-png-top-view.png" alt="cloud decoration"></div>
             <div class="container_buttons" id="tagline">
-                <a href="#aboutme">
+                <a href="#profile">
                     <h1>dreaming in a</h1>
                     <h1 class="big">(digital) reality</h1>
                     <h1>↓</h1>
@@ -84,7 +85,7 @@
                     <div class="sticky">
                         <div class="sticky_window">
                             <div class="window_bar">
-                                <h2 class="window_title">me.exe</h2>
+                                <h4 class="window_title">me.exe</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -103,7 +104,7 @@
                         <!-- other links -->
                         <div class="sticky_window">
                             <div class="window_bar" style="background-color: rgb(255, 249, 220);">
-                                <h2 class="window_title">other-links.txt</h2>
+                                <h4 class="window_title">links.txt</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -112,13 +113,13 @@
                             </div>
                             <div class="other_content">
                                 <a href="https://www.linkedin.com/in/tiffanyren/" target="_blank">
-                                    <p>linkedin ↗</p>
+                                    <h4>linkedin ↗</h4>
                                 </a>
                                 <a href="https://github.com/tiffanyren/tiffanyren.github.io" target="_blank">
-                                    <p>github (this site) ↗</p>
+                                    <h4>github (this site) ↗</h4>
                                 </a>
                                 <a href="https://www.instagram.com/ae.stopia/" target="_blank">
-                                    <p>art instagram ↗</p>
+                                    <h4>art instagram ↗</h4>
                                 </a>
                             </div>
                         </div>
@@ -132,7 +133,7 @@
                     <section id="aboutme">
                         <div class="aboutme">
                             <div class="window_bar" style="background-color: rgb(255, 228, 247);">
-                                <h2 class="window_title">about-me.jpeg</h2>
+                                <h4 class="window_title">about-me.jpeg</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -140,11 +141,11 @@
                                 </div>
                             </div>
                             <div class="action_bar">
-                                <p><span style="text-decoration:underline">F</span>ile</p>
-                                <p><span style="text-decoration:underline">E</span>dit</p>
-                                <p><span style="text-decoration:underline">V</span>iew</p>
-                                <p><span style="text-decoration:underline">O</span>ptions</p>
-                                <p><span style="text-decoration:underline">H</span>elp</p>
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
                             </div>
                             <div class="paint_content">
                                 <div class="paint_toolbar">
@@ -210,7 +211,7 @@
                     <section id="work">
                         <div class="work">
                             <div class="window_bar" style="background-color: rgb(228, 240, 255);">
-                                <h2 class="window_title">design-work.exe</h2>
+                                <h4 class="window_title">design-work.exe</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -218,11 +219,11 @@
                                 </div>
                             </div>
                             <div class="action_bar">
-                                <p><span style="text-decoration:underline">F</span>ile</p>
-                                <p><span style="text-decoration:underline">E</span>dit</p>
-                                <p><span style="text-decoration:underline">V</span>iew</p>
-                                <p><span style="text-decoration:underline">O</span>ptions</p>
-                                <p><span style="text-decoration:underline">H</span>elp</p>
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
                             </div>
                             <div class="content_flow">
                                 <div class="content_title">
@@ -235,7 +236,7 @@
                                     <!-- VR3S -->
                                     <a class="project_listing" href="projects/vr3s.html">
                                         <div class="listing_left">
-                                            <h2>VR3S: VR Surgical Simulation Suite</h2>
+                                            <h3>VR3S: VR Surgical Simulation Suite</h3>
                                             <div class="project_tags">
                                                 <span class="project_tag"
                                                     style="background-color:rgb(219, 173, 230);">virtual
@@ -249,13 +250,14 @@
                                                 environment.</p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/projects/vr3s/Surgeons-Without-Borders.jpg" alt="VR3S cover image with user wearing VR device">
+                                            <img src="img/projects/vr3s/Surgeons-Without-Borders.jpg"
+                                                alt="VR3S cover image with user wearing VR device">
                                         </div>
                                     </a>
                                     <!-- MUXI -->
                                     <a class="project_listing" href="projects/muxi.html">
                                         <div class="listing_left">
-                                            <h2>Muxi: AI-Guided Product Planning</h2>
+                                            <h3>Muxi: AI-Guided Product Planning</h3>
                                             <div class="project_tags">
                                                 <span class="project_tag" style="background-color:lightblue;">artificial
                                                     intelligence</span>
@@ -266,13 +268,14 @@
                                                 other AI builders.</p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/projects/muxi/Cover2.jpg" alt="muxi project cover image with muxi screen">
+                                            <img src="img/projects/muxi/Cover2.jpg"
+                                                alt="muxi project cover image with muxi screen">
                                         </div>
                                     </a>
                                     <!-- LEGO -->
                                     <a class="project_listing" href="projects/lego.html">
                                         <div class="listing_left">
-                                            <h2>LEGO: Mars Perseverance Rover AR</h2>
+                                            <h3>LEGO: Mars Perseverance Rover AR</h3>
                                             <div class="project_tags">
                                                 <span class="project_tag" style="background-color:lightblue;">augmented
                                                     reality</span>
@@ -282,10 +285,11 @@
                                             <p>A LEGO® Technic™ AR+ experience for the Mars Perseverance Rover. </p>
                                         </div>
                                         <div class="listing_right">
-                                            <img src="img/projects/lego/lego-cover.png" alt="lego project cover with young girl using AR application on lego">
+                                            <img src="img/projects/lego/lego-cover.png"
+                                                alt="lego project cover with young girl using AR application on lego">
                                         </div>
                                     </a>
-                                    
+
                                     <!-- AI Conversational Digital Twin -->
                                     <!-- <a class="project_listing">
                                         <div class="listing_left">
@@ -312,7 +316,7 @@
                                     <!-- Other UI Artifacts -->
                                     <a class="project_listing">
                                         <div class="listing_left">
-                                            <h2>UI Artifacts</h2>
+                                            <h3>UI Artifacts</h3>
                                             <div class="project_tags">
                                                 <span class="project_tag" style="background-color:lightblue;">mixed
                                                     reality</span>
@@ -333,7 +337,7 @@
                     <section id="otherprojects">
                         <div class="other_projects">
                             <div class="window_bar" style="background-color: rgb(228, 255, 249);">
-                                <h2 class="window_title">other-projects.exe</h2>
+                                <h4 class="window_title">other-projects.exe</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -341,17 +345,17 @@
                                 </div>
                             </div>
                             <div class="action_bar">
-                                <p><span style="text-decoration:underline">F</span>ile</p>
-                                <p><span style="text-decoration:underline">E</span>dit</p>
-                                <p><span style="text-decoration:underline">V</span>iew</p>
-                                <p><span style="text-decoration:underline">O</span>ptions</p>
-                                <p><span style="text-decoration:underline">H</span>elp</p>
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
                             </div>
                             <div class="content_flow">
                                 <div class="content_title" style="margin-bottom:3em;">
                                     <h2>other projects</h2>
                                     <!-- <p>Other work includes merchandise design, video planning/editing, and more.</p> -->
-                                     <p>This section is WIP! It should be ready by mid-September.</p>
+                                    <p>This section is WIP! It should be ready by mid-September.</p>
                                 </div>
                                 <!-- <div class="window_content">
 
@@ -384,7 +388,7 @@
                     <section id="hobbies">
                         <div class="hobbies">
                             <div class="window_bar" style="background-color: rgb(255, 228, 247);">
-                                <h2 class="window_title">hobbies.exe</h2>
+                                <h4 class="window_title">hobbies.exe</h4>
                                 <div class="window_buttons">
                                     <span class="circle c1"></span>
                                     <span class="circle c2"></span>
@@ -392,17 +396,17 @@
                                 </div>
                             </div>
                             <div class="action_bar">
-                                <p><span style="text-decoration:underline">F</span>ile</p>
-                                <p><span style="text-decoration:underline">E</span>dit</p>
-                                <p><span style="text-decoration:underline">V</span>iew</p>
-                                <p><span style="text-decoration:underline">O</span>ptions</p>
-                                <p><span style="text-decoration:underline">H</span>elp</p>
+                                <h4><span style="text-decoration:underline">F</span>ile</h4>
+                                <h4><span style="text-decoration:underline">E</span>dit</h4>
+                                <h4><span style="text-decoration:underline">V</span>iew</h4>
+                                <h4><span style="text-decoration:underline">O</span>ptions</h4>
+                                <h4><span style="text-decoration:underline">H</span>elp</h4>
                             </div>
                             <div class="content_flow">
                                 <div class="content_title" style="margin-bottom:3em;">
                                     <h2>hobbies</h2>
                                     <!-- <p>Other work includes merchandise design, video planning/editing, and more.</p> -->
-                                     <p>This section is WIP! It should be ready by mid-September.</p>
+                                    <p>This section is WIP! It should be ready by mid-September.</p>
                                 </div>
                                 <!-- <div class="window_content">
 
