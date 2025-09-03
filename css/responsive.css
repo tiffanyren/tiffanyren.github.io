@@ -193,3 +193,9 @@
         font-size: 0.9rem;
     }
 }
+
+@media (min-width: 750px) {
+    .container_starryeffect {
+        margin-top:2em;
+    }
+}
