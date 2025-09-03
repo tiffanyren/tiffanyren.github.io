@@ -63,6 +63,13 @@
         margin-right: 0;
     }
 
+    .two_column {
+        flex-direction: column;
+    }
+
+    .two_column_block {
+        flex-basis: 100%;
+    }
 
 }
 
@@ -184,6 +191,7 @@
         margin-left: 0;
         margin-right: 0;
     }
+
 
 }
 
