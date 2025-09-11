@@ -35,7 +35,7 @@
                 <h4>tiff's home</h4>
             </span>
         </a>
-        <a class="nav_icon_button" href="../index.html#aboutme"id="a_about">
+        <a class="nav_icon_button" href="../index.html#aboutme" id="a_about">
             <img class="img_logo" src="../img/nav/icon-about.svg" alt="about icon">
             <span>
                 <h4>about me</h4>
@@ -134,7 +134,8 @@
                             <div class="content_flow">
                                 <div class="content_title">
                                     <h2>muxi: ai-guided product planning</h2>
-                                    <img src="../img/projects/muxi/Cover2.jpg" alt="muxi project cover image with muxi screen">
+                                    <img src="../img/projects/muxi/Cover2.jpg"
+                                        alt="muxi project cover image with muxi screen">
                                 </div>
                                 <div class="projectpage_content">
                                     <div class="projectpage_section">
@@ -163,8 +164,8 @@
                                     <div class="projectpage_section">
                                         <h3>Beta-ready in 4 months</h3>
                                         <p>Beginning as an AI-partner for user research, the web platform originally
-                                            catered towards UX/UI designer and
-                                            design researchers. This proof-of-concept version of
+                                            catered towards UX/UI designers and researchers. This proof-of-concept
+                                            version of
                                             the product required a high degree of manual inputs from the user. Much of
                                             the work here was focused on the technical side of things, rather than
                                             focused on the user experience.</p>
@@ -172,7 +173,7 @@
                                             a tight,
                                             4 month timeline to lead the next phase of this product. However, things did
                                             not go as planned--the
-                                            previously collated research for this product had little
+                                            previously collected research for this product had little
                                             evidence to support the adoption and future pricing models.
                                             The original product idea had a very small scope of
                                             potential users, and provided very little added value beyond what other
@@ -188,17 +189,24 @@
                                             features, and a change in scope and timeline.</p>
                                     </div>
                                     <div class="projectpage_section">
+                                        <img src="../img/projects/muxi/crud-wip.png"
+                                            alt="muxi's CRUD conversations wip">
+                                        <p class=image_caption>A small section of our Miro design thinking board,
+                                            covering CRUD (create, read, update, delete).</p>
+                                    </div>
+
+                                    <div class="projectpage_section">
                                         <h3>New horizons</h3>
                                         <p>Our new direction consisted of a few main focuses:</p>
-                                    <ol>
-                                        <li>Build for budding product teams looking to
-                                            validate their ideas.</li>
-                                        <li>AI should enhance the user's work, rather than
-                                            regurgitate answers from
-                                            the internet--meaning new features that build on the user's inputs.</li>
-                                        <li>The experience should be quick, linear, and
-                                            provide an actionable outcome
-                                            for the user.</li>
+                                        <ol>
+                                            <li>Build for budding product teams looking to
+                                                validate their ideas.</li>
+                                            <li>AI should enhance the user's work, rather than
+                                                regurgitate answers from
+                                                the internet--meaning new features that build on the user's inputs.</li>
+                                            <li>The experience should be quick, linear, and
+                                                provide an actionable outcome
+                                                for the user.</li>
                                         </ol>
                                         <p>With the new direction in mind, several large UX/UI changes needed to be in
                                             place to ensure the user could intuitively navigate through the interface.
@@ -216,7 +224,7 @@
                                         <p class=image_caption>Previous MVP iteration</p>
                                     </div>
                                     <div class="projectpage_section">
-                                        <p>To tackle this, I introduced navigation bars that cover both high level
+                                        <p>In this phase, I introduced navigation bars that cover both high level
                                             navigation (such as home dashboard and settings), as well as lower
                                             level navigation (within the current feature). This allows the
                                             user to have full control and understanding of where they are in the
@@ -229,7 +237,7 @@
                                             and a user settings menu</p>
                                     </div>
                                     <div class="projectpage_section">
-                                        <h3>Visualizing linear flows</h3>
+                                        <h3>Complexity in linear flows</h3>
                                         <p>Previously, users were unsure which modules needed to be completed in what
                                             order, which lead to confusion when they accessed a module that was still
                                             locked.</p>
@@ -239,6 +247,15 @@
                                             We also introduced additional flexibility by allowing the user to set
                                             project
                                             goals, which would customize their linear process.</p>
+
+                                        <!-- 
+                                        <p>Additionally, we wanted to allow users to manually upload relevant
+                                            information through documents and pdf files. However, given the linear flow,
+                                            we had to figure out where and when the user would upload files for the
+                                            optimal user experience, and balance it with the technical needs and cost of
+                                            processing all the information. To focus on testing core functionalities in
+                                            the beta phase, this was descoped.</p> -->
+
                                     </div>
                                     <div class="projectpage_section">
                                         <img src="../img/projects/muxi/Project Overview.jpg"
@@ -247,9 +264,15 @@
                                             project export menu</p>
                                     </div>
                                     <div class="projectpage_section">
-                                        <p>In individual modules, users can also now see save and update buttons
-                                            respective to their current progress, with their overall progress in this
-                                            project reflected in the left side navigation bar.
+                                        <p>Designing CRUD to be used with linear flows proved to be a challenge. We
+                                            needed to account for the user updating or deleting a module's content that
+                                            directly affected subsequent modules, and if those modules would require
+                                            user action, automatic updates, or deletion. </p>
+                                        <p>To implement CRUD smoothly while minimizing development load, we opted for a
+                                            simple, happy medium between manual actions and automatic updates.
+                                            Users would go to an affected module, click a button to regenerate the
+                                            content, and if they're happy with it, they can then click update to push
+                                            the changes.
                                         </p>
                                     </div>
                                     <div class="projectpage_section" style="margin-bottom:1em;">
@@ -266,7 +289,9 @@
                                         <p>I also conducted additional product research to expand the scope of the
                                             application's AI generated content, allowing us to provide the user with
                                             better insights and structured suggestions to improve the user's breadth of
-                                            research.
+                                            research. The module would automatically detect the product's industry and
+                                            provide relevant, structured business information such as market trends,
+                                            financial performance, and barriers to entry.
                                         </p>
                                     </div>
                                     <div class="projectpage_section">
@@ -274,6 +299,22 @@
                                             alt="muxi new industry insights">
                                         <p class=image_caption>A transformed module providing the user with guidance
                                             around industry information</p>
+                                    </div>
+                                    <div class="projectpage_section">
+                                        <h3>Delivering designs to developers</h3>
+                                        <p>A huge part of my design process is ensuring designs can easily be
+                                            understood, navigated, and implemented by the development team. Throughout
+                                            my design files, I focus on a very clean interface coupled with
+                                            documentation, and linked directly to tickets with acceptance criteria. I
+                                            like to present the big idea via overarching UX flows, then break it down
+                                            into features, and then into mockup flows for each section of the screen.
+                                        </p>
+                                    </div>
+                                    <div class="projectpage_section">
+                                        <img src="../img/projects/muxi/figma-organization.png"
+                                            alt="figma file organization">
+                                        <p class=image_caption>A screen capture of the project overview and the
+                                            flows for each section of the page. (Screenshot does not show UX flows)</p>
                                     </div>
                                     <div class="projectpage_section">
                                         <h3>Giving it some wings</h3>
@@ -299,10 +340,10 @@
                                         <img src="../img/projects/muxi/Branding.jpg" alt="muxi new butterfly branding">
                                         <p class=image_caption>Logos, favicons, catchphrase, colors, and icons</p>
                                     </div>
-                                    <div class="projectpage_section">
+                                    <!-- <div class="projectpage_section">
                                         <p>Now available at <a href="https://www.muxi.rocks/">muxi.rocks/</a>
                                         </p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                     </section>
