@@ -28,8 +28,8 @@ IMG & BUTTON -------------------
 }
 
 .container_buttons {
-    top:60%;
-    left:50%;
+    top: 60%;
+    left: 50%;
 }
 
 .container_buttons a {
@@ -53,12 +53,13 @@ IMG & BUTTON -------------------
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
 .container_starryeffect img {
-    height:auto;
+    height: auto;
 }
 
 
